@@ -2,3 +2,4 @@
 02/07/2018: 16:31 - 16:32:pool[setup bcrypt]
 02/07/2018: 16:32 - 17:00:pool[gen user model and controller]
 02/07/2018: 19:03 - 19:05:pool[gen sessions controller]
+02/07/2018: 19:05 - 19:35:pool[create session login view]
