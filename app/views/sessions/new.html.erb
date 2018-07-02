@@ -1,7 +1,7 @@
 <%= form_for :session, :html => {role: "form"}, url: login_path do |f| %>
     <p><%= f.text_field :email, placeholder: "Enter Email" %></p>
     <p><%= f.text_field :password, placeholder: "Enter Password" %></p>
-    <%= f.submit, "Log In" %>
+    <%= f.submit "Log In" %>
    
 
 <% end %>
