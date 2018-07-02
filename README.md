@@ -15,3 +15,7 @@ Colleagues may grant redeemable points to other colleagues that can be used to e
 - aws
 - jQuery
 - SASS
+- 
+**Current Features**
+- Single user Authentication using bcrypt and has_secure_password
+- Styled flash messages with jQuery and toastr_rails
