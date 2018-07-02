@@ -4,3 +4,4 @@
 02/07/2018: 19:03 - 19:05:pool[gen sessions controller]
 02/07/2018: 19:05 - 19:35:pool[create session login view]
 02/07/2018: 19:35 - 19:37:pool[set up session routes]
+02/07/2018: 19:37 - 19:48:pool[set up statics controller]
