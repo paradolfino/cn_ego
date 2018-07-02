@@ -9,6 +9,9 @@ default: &default
 development:
   <<: *default
   database: app_development
+  username: username
+  password: password
+  host:     <%= ENV['IP'] %>
 
 test:
   <<: *default
