@@ -7,3 +7,4 @@
 02/07/2018: 19:37 - 19:48:pool[set up statics controller]
 02/07/2018: 19:48 - 20:19:pool[install toastr_rails]
 03/07/2018: 14:49 - 15:17:pool[create users edit form view]
+03/07/2018: 15:17 - 15:22:pool[create participant model]
