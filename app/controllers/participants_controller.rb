@@ -14,7 +14,14 @@ class ParticipantsController < ApplicationController
   end
   
   def create
+    @participant = Participant.new(participant_params)
     
+    if @participant.save
+      flash[:notice] = "Created Participant Successfully!"
+      redirect_to participant_route(@participant)
+    else
+      
+    end
   end
 
   def edit
