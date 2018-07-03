@@ -28,4 +28,12 @@ class ParticipantsController < ApplicationController
   def destroy
     
   end
+  
+  private
+  
+    def set_participant
+      @participant = Participant.find(params[:id])
+    end
+    
+    
 end
