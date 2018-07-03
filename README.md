@@ -2,6 +2,13 @@
 
 Colleagues may grant redeemable points to other colleagues that can be used to exchange for prizes. The Project will keep track of colleagues and their total points earned and points to give. The Project will also keep a catalogue of prizes. There will be a single admin user that can add/remove/edit "participant" users.
 
+**Current Features**
+- Single user Authentication using bcrypt and has_secure_password
+- Styled flash messages with jQuery and toastr_rails
+
+**Working On**
+- Ability to Edit User information and reset password.
+
 **Possible Features**
 - Import participants from CSV or XLS
 - Create prizes with images and descriptions, and images can be uploaded to aws for storage
@@ -9,13 +16,10 @@ Colleagues may grant redeemable points to other colleagues that can be used to e
 - Increment or decrement points for participants by a specified amount
 - Enable participants to look up their earned/avilable points
 - Participants can look up prizes
-- 
+
 **Possible Gems/Libraries**
 - bcrypt unless using Devise
 - aws
 - jQuery
 - SASS
-- 
-**Current Features**
-- Single user Authentication using bcrypt and has_secure_password
-- Styled flash messages with jQuery and toastr_rails
+
