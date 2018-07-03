@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'participants/index'
+  get 'participants/show'
+  get 'participants/new'
+  get 'participants/edit'
   root 'statics#home'
   get 'login', to: 'sessions#new'
   post 'login', to: 'sessions#create'
