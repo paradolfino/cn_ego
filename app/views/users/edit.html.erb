@@ -1,7 +1,7 @@
 <%= form_for @user do |f| %>
     <p><%= f.text_field :name, placeholder: "Enter a Name" %></p>
     <p><%= f.text_field :email, placeholder: "Enter an Email" %></p>
-    <p><%= f.password_field :password, placeholder: "Enter a Password" %></p>
-    <p><%= f.password_field :password_confirmation, placeholder: "Enter a Password" %></p>
+    <p><%= f.password_field :password, placeholder: "Enter a new Password" %></p>
+    <p><%= f.password_field :password_confirmation, placeholder: "Reenter new Password" %></p>
     <%= f.submit "Update" %>
 <% end %>
