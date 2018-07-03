@@ -35,5 +35,7 @@ class ParticipantsController < ApplicationController
       @participant = Participant.find(params[:id])
     end
     
-    
+    def participant_params
+      params.require(:participant).require(:name, :points)
+    end
 end
