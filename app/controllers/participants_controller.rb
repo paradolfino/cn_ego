@@ -23,7 +23,7 @@ class ParticipantsController < ApplicationController
     
     if @participant.save
       flash[:notice] = "Created Participant Successfully!"
-      redirect_to participant_route(@participant)
+      redirect_to participant_path(@participant)
     else
       flash[:alert] = "An error has occurred when trying to create this participant. Make sure all fields are filled out."
       render 'new'
