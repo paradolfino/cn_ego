@@ -2,7 +2,7 @@ class ParticipantsController < ApplicationController
   before_action :set_participant, only: [:show, :edit, :update, :destroy]
   
   def index
-    @participants = Participant.order("ASC points")
+    @participants = Participant.order("points DESC")
   end
 
   def show
@@ -23,7 +23,7 @@ class ParticipantsController < ApplicationController
     
     if @participant.save
       flash[:notice] = "Created Participant Successfully!"
-      redirect_to participant_route(@participant)
+      redirect_to participant_path(@participant)
     else
       flash[:alert] = "An error has occurred when trying to create this participant. Make sure all fields are filled out."
       render 'new'
@@ -41,7 +41,7 @@ class ParticipantsController < ApplicationController
   def update
     if @participant.update(participant_params)
       flash[:notice] = "Updated Participant Successfully!"
-      redirect_to participant_route(@participant)
+      redirect_to participant_path(@participant)
     else
       flash[:alert] = "An error has occurred when trying to update this participant."
       render 'edit'
@@ -60,6 +60,6 @@ class ParticipantsController < ApplicationController
     end
     
     def participant_params
-      params.require(:participant).require(:name, :points)
+      params.require(:participant).permit(:name, :points)
     end
 end
