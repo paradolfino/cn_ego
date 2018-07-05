@@ -60,6 +60,6 @@ class ParticipantsController < ApplicationController
     end
     
     def participant_params
-      params.require(:participant).require(:name, :points)
+      params.require(:participant).permit(:name, :points)
     end
 end
