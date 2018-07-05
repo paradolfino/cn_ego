@@ -41,7 +41,7 @@ class ParticipantsController < ApplicationController
   def update
     if @participant.update(participant_params)
       flash[:notice] = "Updated Participant Successfully!"
-      redirect_to participant_route(@participant)
+      redirect_to participant_path(@participant)
     else
       flash[:alert] = "An error has occurred when trying to update this participant."
       render 'edit'
