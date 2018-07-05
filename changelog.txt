@@ -10,3 +10,4 @@
 03/07/2018: 15:17 - 15:22:pool[create participant model]
 03/07/2018: 15:22 - 16:23:pool[fix users controller and update view to allow updating of password]
 03/07/2018: 16:23 - 16:24:pool[gen participant controller]
+05/07/2018: 13:37 - 13:45:pool[install and set up friendly_id]
