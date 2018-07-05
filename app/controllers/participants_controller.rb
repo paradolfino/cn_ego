@@ -13,8 +13,8 @@ class ParticipantsController < ApplicationController
     @participant = Participant.new
     @keywords = {
       name: "Enter",
-      points: ["Change", "Current"],
-      submit: "Update"
+      points: ["Enter", "Starting"],
+      submit: "Create"
     }
   end
   
@@ -33,8 +33,8 @@ class ParticipantsController < ApplicationController
   def edit
     @keywords = {
       name: "Edit",
-      points: ["Enter", "Starting"],
-      submit: "Create"
+      points: ["Change", "Current"],
+      submit: "Update"
     }
   end
   
