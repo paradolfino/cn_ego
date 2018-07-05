@@ -11,3 +11,4 @@
 03/07/2018: 15:22 - 16:23:pool[fix users controller and update view to allow updating of password]
 03/07/2018: 16:23 - 16:24:pool[gen participant controller]
 05/07/2018: 13:37 - 13:45:pool[install and set up friendly_id]
+05/07/2018: 13:59 - 14:05:pool[add new/edit form partial for participants]
