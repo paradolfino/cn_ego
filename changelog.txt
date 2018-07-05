@@ -16,3 +16,4 @@
 05/07/2018: 14:11 - 14:13:pool[add routes for participants]
 05/07/2018: 14:13 - 14:59:pool[fix form partial to use locals]
 05/07/2018: 15:59 - 16:15:pool[add index view]
+05/07/2018: 16:15 - 16:33:pool[add show view for participant]
