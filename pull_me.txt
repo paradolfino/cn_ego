@@ -1,1 +1,9 @@
 
+[add form partial that uses string interpolation dependent on view currently accessed]
+### 05/07/2018[13:59 - 14:59]:
+* add new/edit form partial for participants
+* add edit/new views that pass data to partial
+* add routes for participants
+* fix form partial to use locals
+
+What's Next? continue setup of basic participant views

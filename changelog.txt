@@ -14,3 +14,4 @@
 05/07/2018: 13:59 - 14:05:pool[add new/edit form partial for participants]
 05/07/2018: 14:05 - 14:11:pool[add edit/new views that pass data to partial]
 05/07/2018: 14:11 - 14:13:pool[add routes for participants]
+05/07/2018: 14:13 - 14:59:pool[fix form partial to use locals]
