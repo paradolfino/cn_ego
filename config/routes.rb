@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   get 'logout', to: 'sessions#destroy'
   get 'update/admin/:id', to: 'users#edit'
   resources :users, only: [:update]
+  resources :participants
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
