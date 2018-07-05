@@ -2,7 +2,7 @@ class ParticipantsController < ApplicationController
   before_action :set_participant, only: [:show, :edit, :update, :destroy]
   
   def index
-    @participants = Participant.order("ASC points")
+    @participants = Participant.order("points ASC")
   end
 
   def show
