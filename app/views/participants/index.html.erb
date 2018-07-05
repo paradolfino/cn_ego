@@ -5,12 +5,14 @@
     <thead>
         <th>Name</th>
         <th>Points</th>
+        <th>Options</th>
     </thead>
     <tbody>
         <% @participants.each do |participant| %>
             <tr>
                 <td><%= participant.name %></td>
                 <td><%= participant.points %></td>
+                <td><%= link_to "View", participant_path(participant) %></td>
             </tr>
         <% end %>
     </tbody>
