@@ -11,6 +11,11 @@ class ParticipantsController < ApplicationController
 
   def new
     @participant = Participant.new
+    @keywords = {
+      name: "New",
+      points: ["Change", "Current"],
+      submit: "Edit"
+    }
   end
   
   def create
