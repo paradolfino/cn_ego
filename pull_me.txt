@@ -1,7 +1,1 @@
 
-[add basic show and index views for participants]
-### 05/07/2018[15:59 - 16:33]:
-* add index view
-* add show view for participant
-
-What's Next? add helper methods and set up validations
