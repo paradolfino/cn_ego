@@ -11,10 +11,11 @@ class UsersController < ApplicationController
       flash[:notice] = "User Successfully Updated"
       redirect_to '/'
     else
+      @errors = @user.errors if @user.errors.any?
       flash[:alert] = "An error has occurred!"
       render 'edit'
     end
-    @resource = @user
+    
   end
   
   private
