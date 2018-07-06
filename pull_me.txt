@@ -1,7 +1,8 @@
 
-[add basic show and index views for participants]
-### 05/07/2018[15:59 - 16:33]:
-* add index view
-* add show view for participant
+[add helper methods to application controller and set before_actions for authenticate_user]
+### 06/07/2018[13:51 - 13:58]:
+* create logged_in? helper
+* create authenticate_user method
+* add authenticate user before action to controllers
 
-What's Next? add helper methods and set up validations
+What's Next? work on validations for participants
