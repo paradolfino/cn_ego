@@ -18,3 +18,4 @@
 05/07/2018: 15:59 - 16:15:pool[add index view]
 05/07/2018: 16:15 - 16:33:pool[add show view for participant]
 06/07/2018: 13:51 - 13:53:pool[create logged_in? helper]
+06/07/2018: 13:53 - 13:55:pool[create authenticate_user method]
