@@ -27,7 +27,9 @@ class ParticipantsController < ApplicationController
       redirect_to participant_path(@participant)
     else
       
-      flash[:alert] = @participant.errors.full_messages
+      @participant.errors.full_messages.each do |m|
+        flash[:alert] = m
+      end
       redirect_to new_participant_path
     end
     
