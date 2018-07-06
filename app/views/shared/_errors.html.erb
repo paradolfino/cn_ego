@@ -1,8 +1,0 @@
-<% if @errors && @errors.any? %>
-    <script type="text/javascript">
-        alert("test");
-        <% @errors.full_messages.each do |v| %>
-            toastr.error('<%= v %>')
-        <% end %>
-    </script>
-<% end %>
