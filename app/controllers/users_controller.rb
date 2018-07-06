@@ -14,6 +14,7 @@ class UsersController < ApplicationController
       flash[:alert] = "An error has occurred!"
       render 'edit'
     end
+    @resource = @user
   end
   
   private
