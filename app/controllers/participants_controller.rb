@@ -27,7 +27,7 @@ class ParticipantsController < ApplicationController
       redirect_to participant_path(@participant)
     else
       @errors = @participant.errors if @participant.errors.any?
-      flash[:alert] = "An error has occurred when trying to create this participant. Make sure all fields are filled out."
+      flash[:alert] = @participant.errors.full_messages
       redirect_to new_participant_path
     end
     
