@@ -1,4 +1,4 @@
-<% if @errors.any? %>
+<% if @errors && @errors.any? %>
     <script type="text/javascript">
         alert("test");
         <% @errors.full_messages.each do |v| %>
