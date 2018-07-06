@@ -4,4 +4,11 @@ class ApplicationController < ActionController::Base
     def logged_in?
        session[:user_id] != nil ? true : false
     end
+    
+    def authenticate_user
+        if !logged_in?
+            flash[:alert] = "Invalid access!"
+            redirect_to "/"
+        end
+    end
 end
