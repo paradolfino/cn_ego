@@ -1,5 +1,6 @@
 class ParticipantsController < ApplicationController
   before_action :set_participant, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user, except: [:show]
   
   def index
     @participants = Participant.order("points DESC")
