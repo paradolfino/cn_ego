@@ -49,8 +49,11 @@ class ParticipantsController < ApplicationController
       flash[:notice] = "Updated Participant Successfully!"
       redirect_to participant_path(@participant)
     else
-      
-      flash[:alert] = "An error has occurred when trying to update this participant."
+      @errors = []
+      @participant.errors.full_messages.each do |m|
+        @errors << m
+      end
+      flash[:alert] = "Please correct the following errors: #{@errors.join(". ")}"
       render 'edit'
     end
     
