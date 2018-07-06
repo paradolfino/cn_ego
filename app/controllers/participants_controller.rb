@@ -30,7 +30,7 @@ class ParticipantsController < ApplicationController
       @participant.errors.full_messages.each do |m|
         @errors << m
       end
-      flash[:alert] = @errors
+      flash[:alert] = @errors.join(".")
       redirect_to new_participant_path
     end
     
