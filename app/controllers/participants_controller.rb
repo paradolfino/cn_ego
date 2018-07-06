@@ -26,10 +26,11 @@ class ParticipantsController < ApplicationController
       flash[:notice] = "Created Participant Successfully!"
       redirect_to participant_path(@participant)
     else
-      
+      @errors = []
       @participant.errors.full_messages.each do |m|
-        flash[:alert] = m
+        @errors << m
       end
+      flash[:alert] = @errors
       redirect_to new_participant_path
     end
     
