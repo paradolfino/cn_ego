@@ -1,8 +1,7 @@
 
-[add helper methods to application controller and set before_actions for authenticate_user]
-### 06/07/2018[13:51 - 13:58]:
-* create logged_in? helper
-* create authenticate_user method
-* add authenticate user before action to controllers
+[add validations]
+### 06/07/2018[14:15 - 14:32]:
+* add validations for participant
+* add validations for user password
 
-What's Next? work on validations for participants
+What's Next? add validation errors to toastr
