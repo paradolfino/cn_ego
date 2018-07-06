@@ -4,3 +4,9 @@
     <p><%= f.submit "#{@keywords[:submit]} Participant" %></p>
     
 <% end %>
+
+<%= if @participant.errors.any? %>
+    <%= @participant.errors.full_message.each do |m| %>
+    
+    <% end %>
+<% end %>
