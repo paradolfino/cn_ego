@@ -26,9 +26,14 @@ class ParticipantsController < ApplicationController
       flash[:notice] = "Created Participant Successfully!"
       redirect_to participant_path(@participant)
     else
-      flash[:alert] = "An error has occurred when trying to create this participant. Make sure all fields are filled out."
+      @errors = []
+      @participant.errors.full_messages.each do |m|
+        @errors << m
+      end
+      flash[:alert] = "Please correct the following errors: #{@errors.join(". ")}"
       redirect_to new_participant_path
     end
+    
   end
 
   def edit
@@ -44,9 +49,14 @@ class ParticipantsController < ApplicationController
       flash[:notice] = "Updated Participant Successfully!"
       redirect_to participant_path(@participant)
     else
-      flash[:alert] = "An error has occurred when trying to update this participant."
-      render 'edit'
+      @errors = []
+      @participant.errors.full_messages.each do |m|
+        @errors << m
+      end
+      flash[:alert] = "Please correct the following errors: #{@errors.join(". ")}"
+      redirect_to edit_participant_path(@participant)
     end
+    
   end
   
   def destroy

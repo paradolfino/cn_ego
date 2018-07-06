@@ -1,7 +1,8 @@
 
-[add validations]
-### 06/07/2018[14:15 - 14:32]:
-* add validations for participant
-* add validations for user password
+[fix show validations errors with toastr]
+### 06/07/2018[14:58 - 16:48]:
+* add @resource to controllers
+* add errors partial to shared
+* fix setup of errors in controllers
 
-What's Next? add validation errors to toastr
+What's Next? add user controls for edit/deleting participants using logged_in?
