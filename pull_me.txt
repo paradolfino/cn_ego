@@ -1,1 +1,7 @@
 
+[add validations]
+### 06/07/2018[14:15 - 14:32]:
+* add validations for participant
+* add validations for user password
+
+What's Next? add validation errors to toastr
