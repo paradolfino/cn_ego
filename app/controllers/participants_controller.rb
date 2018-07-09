@@ -93,6 +93,6 @@ class ParticipantsController < ApplicationController
     def sanitize_amt
       amount = params[:amount].to_i
       @amount = amount || 0
-      
+      puts @amount
     end
 end
