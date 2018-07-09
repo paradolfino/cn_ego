@@ -72,12 +72,12 @@ class ParticipantsController < ApplicationController
   
   def inc
     @participant.increment!(:points, by=@amount)
-    redirect_to participants_path
+    
   end
   
   def dec
     @participant.decrement!(:points, by=@amount)
-    redirect_to participants_path
+    
   end
   
   private
