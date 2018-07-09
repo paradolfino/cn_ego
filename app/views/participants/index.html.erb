@@ -22,7 +22,15 @@
 </table>
 
 <script type="text/javascript">
+    function relocate(action, id, amt) {
+        window.location.replace('/admin/' + action + '?id=' + id + '&amount=' + amt);
+    }
+
     $(".dec").click(function(){
-        window.location.replace('/decrement?id=' + $(this).attr('id'));
+        
+    });
+    
+    $(".inc").click(function(){
+        
     });
 </script>
