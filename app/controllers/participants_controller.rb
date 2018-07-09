@@ -1,6 +1,7 @@
 class ParticipantsController < ApplicationController
-  before_action :set_participant, only: [:show, :edit, :update, :destroy]
+  before_action :set_participant, only: [:show, :edit, :update, :destroy, :inc, :dec]
   before_action :authenticate_user, except: [:show]
+  before_action :sanitize_amt, only: [:inc, :dec]
   
   def index
     @participants = Participant.order("points DESC")
@@ -24,7 +25,7 @@ class ParticipantsController < ApplicationController
     
     if @participant.save
       flash[:notice] = "Created Participant Successfully!"
-      redirect_to participant_path(@participant)
+      redirect_to participants_path
     else
       @errors = []
       @participant.errors.full_messages.each do |m|
@@ -47,7 +48,7 @@ class ParticipantsController < ApplicationController
   def update
     if @participant.update(participant_params)
       flash[:notice] = "Updated Participant Successfully!"
-      redirect_to participant_path(@participant)
+      redirect_to participants_path
     else
       @errors = []
       @participant.errors.full_messages.each do |m|
@@ -60,8 +61,23 @@ class ParticipantsController < ApplicationController
   end
   
   def destroy
-    flash[:notice] = "Participant has been deleted!"
     @participant.destroy
+    
+    respond_to do |format|
+      format.html { redirect_to participants_url }
+      format.json { head :no_content }
+      format.js   { render :layout => false }
+    end
+  end
+  
+  def inc
+    @participant.increment!(:points, by=@amount)
+    redirect_to participants_path
+  end
+  
+  def dec
+    @participant.decrement!(:points, by=@amount)
+    redirect_to participants_path
   end
   
   private
@@ -72,5 +88,11 @@ class ParticipantsController < ApplicationController
     
     def participant_params
       params.require(:participant).permit(:name, :points)
+    end
+    
+    def sanitize_amt
+      amount = params[:amount].to_i
+      @amount = amount
+      puts "points #{@amount}"
     end
 end

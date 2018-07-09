@@ -1,10 +1,11 @@
-<h1>All Participants</h1>
+<h1>All Participants [<%= link_to "New", new_participant_path %>]</h1>
 
 
 <table>
     <thead>
         <th>Name</th>
         <th>Points</th>
+        <th></th>
         <th>Options</th>
     </thead>
     <tbody>
@@ -12,9 +13,26 @@
             <tr>
                 <td><%= participant.name %></td>
                 <td><%= participant.points %></td>
-                <td><%= link_to "View", participant_path(participant) %></td>
+                <td><button id="dec-<%= participant.id %>" class="dec">-</button> <input type="text" id="points-<%= participant.id %>" placeholder="Enter a Value" value="0"/> <button id="inc-<%= participant.id %>" class="inc">+</button></td>
+                <td><%= link_to "View", participant_path(participant) %> | <%= link_to "Edit", edit_participant_path(participant) %> | <%= link_to "Delete", participant_path(participant), method: :delete, data: { confirm: 'Are you sure you wish to delete this participant?' }, :remote => true, :class => 'delete_part' %></td>
             </tr>
         <% end %>
     </tbody>
     
 </table>
+
+<script type="text/javascript">
+    function relocate(action, id, amt) {
+        window.location.replace('/admin/' + action + '?id=' + id + '&amount=' + amt);
+    }
+
+    $(".dec").click(function(){
+        var id = $(this).attr('id').split('-')[1];
+        relocate("decrement", id, $("#points-" + id).val());
+    });
+    
+    $(".inc").click(function(){
+        var id = $(this).attr('id').split('-')[1];
+        relocate("increment",  id, $("#points-" + id).val());
+    });
+</script>
