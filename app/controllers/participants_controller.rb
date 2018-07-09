@@ -1,5 +1,5 @@
 class ParticipantsController < ApplicationController
-  before_action :set_participant, only: [:show, :edit, :update, :destroy]
+  before_action :set_participant, only: [:show, :edit, :update, :destroy. :inc, :dec]
   before_action :authenticate_user, except: [:show]
   
   def index
@@ -67,6 +67,14 @@ class ParticipantsController < ApplicationController
       format.json { head :no_content }
       format.js   { render :layout => false }
     end
+  end
+  
+  def inc
+    
+  end
+  
+  def dec
+    
   end
   
   private
