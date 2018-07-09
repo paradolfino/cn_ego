@@ -1,5 +1,5 @@
 class ParticipantsController < ApplicationController
-  before_action :set_participant, only: [:show, :edit, :update, :destroy. :inc, :dec]
+  before_action :set_participant, only: [:show, :edit, :update, :destroy, :inc, :dec]
   before_action :authenticate_user, except: [:show]
   
   def index
