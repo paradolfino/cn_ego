@@ -7,6 +7,6 @@ Rails.application.routes.draw do
   resources :users, only: [:update]
   resources :participants
   get 'participants/increment', to: 'participants#inc', as: "inc"
-  get 'participants/decrement', to: 'participants#dec', as "dec"
+  get 'participants/decrement', to: 'participants#dec', as: "dec"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
