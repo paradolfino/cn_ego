@@ -28,10 +28,10 @@
 
     $(".dec").click(function(){
         var id = $(this).attr('id').split('-')[1];
-        relocate("decrement", , $("#points-" + $(this).attr('id')).val());
+        relocate("decrement", id, $("#points-" + id).val());
     });
     
     $(".inc").click(function(){
-        relocate("increment", $(this).attr('id'), $("#points-" + $(this).attr('id')).val());
+        relocate("increment",  id, $("#points-" + id).val());
     });
 </script>
