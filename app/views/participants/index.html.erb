@@ -13,7 +13,7 @@
             <tr>
                 <td><%= participant.name %></td>
                 <td><%= participant.points %></td>
-                <td><button id="dec">-</button> <input type="text" id="points" placeholder="Enter a Value"/> <button id="inc">+</button></td>
+                <td><button class="dec">-</button> <input type="text" id="points" placeholder="Enter a Value"/> <button class="inc">+</button></td>
                 <td><%= link_to "View", participant_path(participant) %> | <%= link_to "Edit", edit_participant_path(participant) %> | <%= link_to "Delete", participant_path(participant), method: :delete, data: { confirm: 'Are you sure you wish to delete this participant?' }, :remote => true, :class => 'delete_part' %></td>
             </tr>
         <% end %>
@@ -21,8 +21,3 @@
     
 </table>
 
-<script type="text/javascript">
-    $("#dec").click(function(){
-        
-    });
-</script>
