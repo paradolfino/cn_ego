@@ -33,3 +33,4 @@
 09/07/2018: 14:41 - 14:42:pool[replace js with button_to helpers in index view]
 09/07/2018: 14:42 - 15:04:pool[add inc and dec actions]
 09/07/2018: 15:04 - 15:23:pool[add inc and dec actions to participants controller]
+09/07/2018: 15:23 - 15:28:pool[fix index view inc/dec js]
