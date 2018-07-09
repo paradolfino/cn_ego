@@ -12,7 +12,7 @@
             <tr>
                 <td><%= participant.name %></td>
                 <td><%= participant.points %></td>
-                <td><%= link_to "View", participant_path(participant) %>, <%= link_to "Delete", participant_path(participant), method: :delete %></td>
+                <td><%= link_to "View", participant_path(participant) %>, <%= link_to "Delete", participant_path(participant), method: :delete, data: { confirm: 'Are you sure you wish to delete this participant?' }, :remote => true, :class => 'delete_part' %></td>
             </tr>
         <% end %>
     </tbody>
