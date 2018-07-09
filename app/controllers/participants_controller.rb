@@ -60,7 +60,6 @@ class ParticipantsController < ApplicationController
   end
   
   def destroy
-    flash[:notice] = "Participant has been deleted!"
     @participant.destroy
     
     respond_to do |format|
