@@ -1,7 +1,7 @@
 class ParticipantsController < ApplicationController
   before_action :set_participant, only: [:show, :edit, :update, :destroy, :inc, :dec]
   before_action :authenticate_user, except: [:show]
-  before_action :sanitize_amt, only[:inc, :dec]
+  before_action :sanitize_amt, only: [:inc, :dec]
   
   def index
     @participants = Participant.order("points DESC")
