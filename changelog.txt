@@ -31,3 +31,4 @@
 09/07/2018: 14:23 - 14:28:pool[add a new column to index view for incrementing and decrementing points]
 09/07/2018: 14:28 - 14:41:pool[setup javascript to inc/dec points based on value specified in text field]
 09/07/2018: 14:41 - 14:42:pool[replace js with button_to helpers in index view]
+09/07/2018: 14:42 - 15:04:pool[add inc and dec actions]
