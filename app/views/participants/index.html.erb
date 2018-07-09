@@ -32,6 +32,7 @@
     });
     
     $(".inc").click(function(){
+        var id = $(this).attr('id').split('-')[1];
         relocate("increment",  id, $("#points-" + id).val());
     });
 </script>
