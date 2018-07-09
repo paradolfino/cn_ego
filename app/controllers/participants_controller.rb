@@ -86,4 +86,10 @@ class ParticipantsController < ApplicationController
     def participant_params
       params.require(:participant).permit(:name, :points)
     end
+    
+    def sanitize_amt
+      amount = params[:amount].to_i
+      @amount = amount || 0
+      
+    end
 end
