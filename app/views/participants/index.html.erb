@@ -27,7 +27,8 @@
     }
 
     $(".dec").click(function(){
-        relocate("decrement", $(this).attr('id'), $("#points-" + $(this).attr('id')).val());
+        var id = $(this).attr('id').split('-')[1];
+        relocate("decrement", , $("#points-" + $(this).attr('id')).val());
     });
     
     $(".inc").click(function(){
