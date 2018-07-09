@@ -12,7 +12,7 @@
             <tr>
                 <td><%= participant.name %></td>
                 <td><%= participant.points %></td>
-                <td><%= link_to "View", participant_path(participant) %>, <%= link_to "Delete", participant_path(participant) %></td>
+                <td><%= link_to "View", participant_path(participant) %>, <%= link_to "Delete", participant_path(participant), method: :delete %></td>
             </tr>
         <% end %>
     </tbody>
