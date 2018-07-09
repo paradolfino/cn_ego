@@ -71,11 +71,11 @@ class ParticipantsController < ApplicationController
   end
   
   def inc
-    @participant.increment(:points, by=params[:amount])
+    @participant.increment(:points, by=@amount)
   end
   
   def dec
-    @participant.decrement(:points, by=params[:amount])
+    @participant.decrement(:points, by=@amount)
   end
   
   private
