@@ -27,3 +27,4 @@
 06/07/2018: 15:12 - 16:48:pool[fix setup of errors in controllers]
 09/07/2018: 13:33 - 14:18:pool[add edit/delete controls to participant index view]
 09/07/2018: 14:18 - 14:18:pool[fix participants controller to redirect to index on create]
+09/07/2018: 14:18 - 14:23:pool[remove flash message from participants controller destroy method]
