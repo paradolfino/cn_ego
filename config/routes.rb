@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   get 'update/admin/:id', to: 'users#edit'
   resources :users, only: [:update]
   resources :participants
+  get 'participants/increment', to 'participants#inc'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
