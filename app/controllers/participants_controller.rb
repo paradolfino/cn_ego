@@ -62,6 +62,12 @@ class ParticipantsController < ApplicationController
   def destroy
     flash[:notice] = "Participant has been deleted!"
     @participant.destroy
+    
+    respond_to do |format|
+      format.html { redirect_to participants_path }
+      format.json { head :no_content }
+      format.js   { render :layout => false }
+    end
   end
   
   private
