@@ -29,3 +29,4 @@
 09/07/2018: 14:18 - 14:18:pool[fix participants controller to redirect to index on create]
 09/07/2018: 14:18 - 14:23:pool[remove flash message from participants controller destroy method]
 09/07/2018: 14:23 - 14:28:pool[add a new column to index view for incrementing and decrementing points]
+09/07/2018: 14:28 - 14:41:pool[setup javascript to inc/dec points based on value specified in text field]
