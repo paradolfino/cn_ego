@@ -24,7 +24,7 @@ class ParticipantsController < ApplicationController
     
     if @participant.save
       flash[:notice] = "Created Participant Successfully!"
-      redirect_to participant_path(@participant)
+      redirect_to participants_path
     else
       @errors = []
       @participant.errors.full_messages.each do |m|
