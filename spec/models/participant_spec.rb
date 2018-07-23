@@ -3,12 +3,12 @@ require 'rails_helper'
 RSpec.describe Participant, type: :model do
   context Participant do
     it "should validate presence of name" do
-        participant = Participant.new(points: 10).save
+        participant = build(:invalid_name)
         expect(participant).to be_invalid
     end
     
     it "should validate presence of points" do
-        participant = Participant.new(name: "Able").save
+        participant = build(:invalid_points)
         expect(participant).to be_invalid
     end
     
