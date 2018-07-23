@@ -16,6 +16,9 @@ development:
 test:
   <<: *default
   database: app_test
+  username: username
+  password: password
+  host:     <%= ENV['IP'] %>
 
 production:
   <<: *default
