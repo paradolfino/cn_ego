@@ -1,1 +1,6 @@
 
+[add tests for rendering view templates]
+### 27/07/2018[13:17 - 14:25]:
+* write template render tests for views
+
+What's Next? add import csv function to participants index

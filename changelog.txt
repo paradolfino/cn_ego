@@ -35,3 +35,4 @@
 09/07/2018: 15:04 - 15:23:pool[add inc and dec actions to participants controller]
 09/07/2018: 15:23 - 15:28:pool[fix index view inc/dec js]
 27/07/2018: 11:20 - 12:21:pool[write import csv method and pass csv feature spec]
+27/07/2018: 13:17 - 14:25:pool[write template render tests for views]
