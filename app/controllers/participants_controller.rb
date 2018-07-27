@@ -1,6 +1,6 @@
 class ParticipantsController < ApplicationController
   before_action :set_participant, only: [:show, :edit, :update, :destroy, :inc, :dec]
-  before_action :authenticate_user, except: [:show]
+  #before_action :authenticate_user, except: [:show]
   before_action :sanitize_amt, only: [:inc, :dec]
   
   def index
@@ -77,6 +77,12 @@ class ParticipantsController < ApplicationController
   
   def dec
     @participant.decrement!(:points, by=@amount)
+    redirect_to participants_path
+  end
+
+  def import
+    Participant.import(params[:file])
+    flash[:notice] = "Participants imported!"
     redirect_to participants_path
   end
   
