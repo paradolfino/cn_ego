@@ -1,14 +1,1 @@
 
-[add ability to increment/decrement participant points]
-### 09/07/2018[13:33 - 15:28]:
-* add edit/delete controls to participant index view
-* fix participants controller to redirect to index on create
-* remove flash message from participants controller destroy method
-* add a new column to index view for incrementing and decrementing points
-* setup javascript to inc/dec points based on value specified in text field
-* replace js with button_to helpers in index view
-* add inc and dec actions
-* add inc and dec actions to participants controller
-* fix index view inc/dec js
-
-What's Next? csv import

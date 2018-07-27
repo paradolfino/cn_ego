@@ -479,11 +479,11 @@
       "/Users/viktharien/Desktop/RubymineProjects/cn_ego/app/controllers/participants_controller.rb": [
         1,
         1,
-        1,
+        null,
         1,
         null,
         1,
-        0,
+        1,
         null,
         null,
         1,
@@ -581,13 +581,13 @@
         1,
         null,
         1,
-        1,
+        0,
         null,
         null,
         1,
-        1,
-        1,
-        1,
+        0,
+        0,
+        0,
         null,
         null,
         null
@@ -619,6 +619,6 @@
         null
       ]
     },
-    "timestamp": 1532658293
+    "timestamp": 1532707564
   }
 }

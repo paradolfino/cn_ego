@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-07-26T21:24:53-05:00">2018-07-26T21:24:53-05:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-07-27T11:06:04-05:00">2018-07-27T11:06:04-05:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">76.36%</span></span>
+    (<span class="covered_percent"><span class="red">74.39%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.76
+         0.74
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>27</b> files in total.
-    <b>165</b> relevant lines. 
-    <span class="green"><b>126</b> lines covered</span> and
-    <span class="red"><b>39</b> lines missed </span>
+    <b>164</b> relevant lines. 
+    <span class="green"><b>122</b> lines covered</span> and
+    <span class="red"><b>42</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -52,21 +52,21 @@
       
       <tr>
         <td class="strong"><a href="#5ef89ba7f14802fd3afe664c7b9f0bd70ec7b37a" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
-        <td class="green strong">100.0 %</td>
+        <td class="red strong">50.0 %</td>
         <td>14</td>
         <td>8</td>
-        <td>8</td>
-        <td>0</td>
-        <td>1.0</td>
+        <td>4</td>
+        <td>4</td>
+        <td>0.5</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#87c12b70febf3fd367bf2a94fb7361adf16b8e33" class="src_link" title="app/controllers/participants_controller.rb">app/controllers/participants_controller.rb</a></td>
-        <td class="red strong">32.69 %</td>
+        <td class="red strong">33.33 %</td>
         <td>98</td>
-        <td>52</td>
+        <td>51</td>
         <td>17</td>
-        <td>35</td>
+        <td>34</td>
         <td>0.3</td>
       </tr>
       
@@ -339,11 +339,11 @@
         <div class="source_table" id="5ef89ba7f14802fd3afe664c7b9f0bd70ec7b37a">
   <div class="header">
     <h3>app/controllers/application_controller.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
+    <h4><span class="red">50.0 %</span> covered</h4>
     <div>
       <b>8</b> relevant lines. 
-      <span class="green"><b>8</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <span class="green"><b>4</b> lines covered</span> and
+      <span class="red"><b>4</b> lines missed.</span>
     </div>
   </div>
   
@@ -374,8 +374,8 @@
           <code class="ruby">    def logged_in?</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="5">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="5">
+          
           
           <code class="ruby">       session[:user_id] != nil ? true : false</code>
         </li>
@@ -398,20 +398,20 @@
           <code class="ruby">    def authenticate_user</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="9">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="9">
+          
           
           <code class="ruby">        if !logged_in?</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="10">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="10">
+          
           
           <code class="ruby">            flash[:alert] = &quot;Invalid access!&quot;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="11">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="11">
+          
           
           <code class="ruby">            redirect_to &quot;/&quot;</code>
         </li>
@@ -442,11 +442,11 @@
         <div class="source_table" id="87c12b70febf3fd367bf2a94fb7361adf16b8e33">
   <div class="header">
     <h3>app/controllers/participants_controller.rb</h3>
-    <h4><span class="red">32.69 %</span> covered</h4>
+    <h4><span class="red">33.33 %</span> covered</h4>
     <div>
-      <b>52</b> relevant lines. 
+      <b>51</b> relevant lines. 
       <span class="green"><b>17</b> lines covered</span> and
-      <span class="red"><b>35</b> lines missed.</span>
+      <span class="red"><b>34</b> lines missed.</span>
     </div>
   </div>
   
@@ -465,10 +465,10 @@
           <code class="ruby">  before_action :set_participant, only: [:show, :edit, :update, :destroy, :inc, :dec]</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="3">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="3">
           
-          <code class="ruby">  before_action :authenticate_user, except: [:show]</code>
+          
+          <code class="ruby">  #before_action :authenticate_user, except: [:show]</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="4">
@@ -489,8 +489,8 @@
           <code class="ruby">  def index</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="7">
-          
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
           
           <code class="ruby">    @participants = Participant.order(&quot;points DESC&quot;)</code>
         </li>
