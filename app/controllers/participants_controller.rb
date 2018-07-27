@@ -79,6 +79,10 @@ class ParticipantsController < ApplicationController
     @participant.decrement!(:points, by=@amount)
     redirect_to participants_path
   end
+
+  def import
+    redirect_to root_path
+  end
   
   private
   
