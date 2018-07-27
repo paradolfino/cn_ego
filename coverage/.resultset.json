@@ -588,13 +588,13 @@
         1,
         null,
         1,
-        1,
+        0,
         null,
         null,
         1,
-        1,
-        1,
-        1,
+        0,
+        0,
+        0,
         null,
         null,
         null
@@ -602,7 +602,7 @@
       "/Users/viktharien/Desktop/RubymineProjects/cn_ego/app/controllers/users_controller.rb": [
         1,
         1,
-        1,
+        null,
         null,
         1,
         null,
@@ -669,6 +669,6 @@
         null
       ]
     },
-    "timestamp": 1532719321
+    "timestamp": 1532719359
   }
 }
