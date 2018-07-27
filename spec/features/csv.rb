@@ -19,4 +19,8 @@ describe ParticipantsController do
       post :import, file: "foo.csv"
     end
   end
+
+  context "test" do
+
+  end
 end
