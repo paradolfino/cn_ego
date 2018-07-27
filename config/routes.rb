@@ -4,7 +4,9 @@ Rails.application.routes.draw do
   post 'login', to: 'sessions#create'
   get 'logout', to: 'sessions#destroy'
   resources :users, only: [:edit, :update]
-  resources :participants
+  resources :participants do
+    collection { post :import}
+  end
   get 'import', to: 'participants#import'
   post 'import', to: 'participants#import'
   get 'admin/increment', to: 'participants#inc', as: "inc"

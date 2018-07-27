@@ -1,5 +1,10 @@
 <h1>All Participants [<%= link_to "New", new_participant_path %>]</h1>
 
+<%= form_tag import_participants_path, multipart: true do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag "import CSV" %>
+<% end %>
+
 
 <table>
     <thead>
