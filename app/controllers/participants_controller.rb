@@ -82,6 +82,7 @@ class ParticipantsController < ApplicationController
 
   def import
     Participant.import(params[:file])
+    flash[:notice] = "Participants imported!"
     redirect_to root_path
   end
   
