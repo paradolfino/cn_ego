@@ -10,19 +10,19 @@ RSpec.describe ParticipantsController, type: :controller do
 
     it "redirects to the home page after post" do
       allow(Participant).to receive(:import).with("foo.csv")
-      post :import, file: "foo.csv"
+      post :import, params: {file: "foo.csv"}
       expect(response).to redirect_to root_path
     end
 
     it "adds a flash notice" do
       allow(Participant).to receive(:import).with("foo.csv")
-      post :import, file: "foo.csv"
+      post :import, params: {file: "foo.csv"}
       expect(flash[:notice]).not_to be_nil
     end
 
     it "imports the csv file" do
       expect(Participant).to receive(:import).with("foo.csv")
-      post :import, file: "foo.csv"
+      post :import, params: {file: "foo.csv"}
     end
   end
 
