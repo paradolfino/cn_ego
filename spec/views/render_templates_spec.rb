@@ -2,12 +2,20 @@ require 'rails_helper'
 
 RSpec.describe ParticipantsController, type: :controller do
 
-  it "renders index template"
+  it "renders index template" do
+    
+  end
 
-  it "renders new template"
+  it "renders new template" do
 
-  it "renders edit template"
+  end
 
-  it "renders show template"
+  it "renders edit template" do
+
+  end
+
+  it "renders show template" do
+
+  end
 
 end
