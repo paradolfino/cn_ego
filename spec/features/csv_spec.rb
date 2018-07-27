@@ -4,6 +4,7 @@ RSpec.describe ParticipantsController, type: :controller do
   context "POST #import" do
 
     it "redirects to the home page" do
+      get :import
       expect(response).to redirect_to root_path
     end
 
