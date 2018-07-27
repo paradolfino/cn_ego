@@ -10,7 +10,7 @@ RSpec.describe ParticipantsController, type: :controller do
     end
 
     it "adds a flash notice" do
-      allow(Participant).to receive(:import).with("foo.txt")
+      allow(Participant).to receive(:import).with("foo.csv")
       post :import, file: "foo.csv"
       expect(flash[:notice]).to eq "Participant was successfully imported."
     end
