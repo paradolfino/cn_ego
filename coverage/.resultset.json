@@ -660,6 +660,14 @@
         null,
         null
       ],
+      "/Users/viktharien/Desktop/RubymineProjects/cn_ego/app/controllers/statics_controller.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        null
+      ],
       "/Users/viktharien/Desktop/RubymineProjects/cn_ego/app/models/participant.rb": [
         1,
         1,
@@ -695,6 +703,6 @@
         null
       ]
     },
-    "timestamp": 1532719472
+    "timestamp": 1532719506
   }
 }
