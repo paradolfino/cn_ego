@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe ParticipantsController, type: :controller do
 
   it "renders index template" do
-    
+
   end
 
   it "renders new template" do
