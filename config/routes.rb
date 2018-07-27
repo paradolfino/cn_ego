@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   resources :users, only: [:update]
   resources :participants
   get 'import', to: 'participants#import'
+  post 'import', to: 'participants#import'
   get 'admin/increment', to: 'participants#inc', as: "inc"
   get 'admin/decrement', to: 'participants#dec', as: "dec"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
