@@ -78,3 +78,14 @@ RSpec.describe SessionsController, type: :controller do
 
 
 end
+
+RSpec.describe StaticsController, type: :controller do
+
+  it "renders edit template" do
+    get :home
+
+    expect(response).to render_template :home
+  end
+
+
+end
