@@ -67,3 +67,14 @@ RSpec.describe UsersController, type: :controller do
 
 
 end
+
+RSpec.describe SessionsController, type: :controller do
+
+  it "renders new template" do
+    get :new
+
+    expect(response).to render_template :new
+  end
+
+
+end
