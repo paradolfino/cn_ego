@@ -3,8 +3,7 @@ Rails.application.routes.draw do
   get 'login', to: 'sessions#new'
   post 'login', to: 'sessions#create'
   get 'logout', to: 'sessions#destroy'
-  get 'update/admin/:id', to: 'users#edit'
-  resources :users, only: [:update]
+  resources :users, only: [:edit, :update]
   resources :participants
   get 'import', to: 'participants#import'
   post 'import', to: 'participants#import'
