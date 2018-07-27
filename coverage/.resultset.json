@@ -592,30 +592,6 @@
         null,
         null
       ],
-      "/Users/viktharien/Desktop/RubymineProjects/cn_ego/spec/models/participant_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
       "/Users/viktharien/Desktop/RubymineProjects/cn_ego/app/models/participant.rb": [
         1,
         1,
@@ -627,7 +603,7 @@
         1,
         null,
         1,
-        4,
+        0,
         null,
         null,
         1,
@@ -641,45 +617,8 @@
         1,
         1,
         null
-      ],
-      "/Users/viktharien/Desktop/RubymineProjects/cn_ego/spec/models/user_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/Users/viktharien/Desktop/RubymineProjects/cn_ego/app/models/user.rb": [
-        1,
-        1,
-        null,
-        1,
-        1,
-        null
       ]
     },
-    "timestamp": 1532655193
+    "timestamp": 1532658293
   }
 }
