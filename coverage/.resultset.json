@@ -1,14 +1,113 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/ubuntu/workspace/config/environment.rb": [
+      "/Users/viktharien/Desktop/RubymineProjects/cn_ego/spec/spec_helper.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null
+      ],
+      "/Users/viktharien/Desktop/RubymineProjects/cn_ego/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/home/ubuntu/workspace/config/application.rb": [
+      "/Users/viktharien/Desktop/RubymineProjects/cn_ego/config/application.rb": [
         1,
         null,
         1,
@@ -43,13 +142,13 @@
         null,
         null
       ],
-      "/home/ubuntu/workspace/config/boot.rb": [
+      "/Users/viktharien/Desktop/RubymineProjects/cn_ego/config/boot.rb": [
         1,
         null,
         1,
         1
       ],
-      "/home/ubuntu/workspace/config/environments/test.rb": [
+      "/Users/viktharien/Desktop/RubymineProjects/cn_ego/config/environments/test.rb": [
         1,
         null,
         null,
@@ -97,7 +196,7 @@
         null,
         null
       ],
-      "/home/ubuntu/workspace/config/initializers/application_controller_renderer.rb": [
+      "/Users/viktharien/Desktop/RubymineProjects/cn_ego/config/initializers/application_controller_renderer.rb": [
         null,
         null,
         null,
@@ -107,7 +206,7 @@
         null,
         null
       ],
-      "/home/ubuntu/workspace/config/initializers/assets.rb": [
+      "/Users/viktharien/Desktop/RubymineProjects/cn_ego/config/initializers/assets.rb": [
         null,
         null,
         null,
@@ -123,7 +222,7 @@
         null,
         null
       ],
-      "/home/ubuntu/workspace/config/initializers/backtrace_silencers.rb": [
+      "/Users/viktharien/Desktop/RubymineProjects/cn_ego/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -132,7 +231,7 @@
         null,
         null
       ],
-      "/home/ubuntu/workspace/config/initializers/content_security_policy.rb": [
+      "/Users/viktharien/Desktop/RubymineProjects/cn_ego/config/initializers/content_security_policy.rb": [
         null,
         null,
         null,
@@ -159,20 +258,20 @@
         null,
         null
       ],
-      "/home/ubuntu/workspace/config/initializers/cookies_serializer.rb": [
+      "/Users/viktharien/Desktop/RubymineProjects/cn_ego/config/initializers/cookies_serializer.rb": [
         null,
         null,
         null,
         null,
         1
       ],
-      "/home/ubuntu/workspace/config/initializers/filter_parameter_logging.rb": [
+      "/Users/viktharien/Desktop/RubymineProjects/cn_ego/config/initializers/filter_parameter_logging.rb": [
         null,
         null,
         null,
         1
       ],
-      "/home/ubuntu/workspace/config/initializers/friendly_id.rb": [
+      "/Users/viktharien/Desktop/RubymineProjects/cn_ego/config/initializers/friendly_id.rb": [
         null,
         null,
         null,
@@ -262,7 +361,7 @@
         null,
         null
       ],
-      "/home/ubuntu/workspace/config/initializers/inflections.rb": [
+      "/Users/viktharien/Desktop/RubymineProjects/cn_ego/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -280,13 +379,13 @@
         null,
         null
       ],
-      "/home/ubuntu/workspace/config/initializers/mime_types.rb": [
+      "/Users/viktharien/Desktop/RubymineProjects/cn_ego/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null
       ],
-      "/home/ubuntu/workspace/config/initializers/wrap_parameters.rb": [
+      "/Users/viktharien/Desktop/RubymineProjects/cn_ego/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -302,7 +401,7 @@
         null,
         null
       ],
-      "/home/ubuntu/workspace/spec/factories/participants.rb": [
+      "/Users/viktharien/Desktop/RubymineProjects/cn_ego/spec/factories/participants.rb": [
         1,
         1,
         1,
@@ -325,7 +424,7 @@
         null,
         null
       ],
-      "/home/ubuntu/workspace/spec/factories/users.rb": [
+      "/Users/viktharien/Desktop/RubymineProjects/cn_ego/spec/factories/users.rb": [
         1,
         1,
         1,
@@ -343,7 +442,7 @@
         null,
         null
       ],
-      "/home/ubuntu/workspace/config/routes.rb": [
+      "/Users/viktharien/Desktop/RubymineProjects/cn_ego/config/routes.rb": [
         1,
         1,
         1,
@@ -357,27 +456,27 @@
         null,
         null
       ],
-      "/home/ubuntu/workspace/app/helpers/application_helper.rb": [
+      "/Users/viktharien/Desktop/RubymineProjects/cn_ego/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/home/ubuntu/workspace/app/helpers/participants_helper.rb": [
+      "/Users/viktharien/Desktop/RubymineProjects/cn_ego/app/helpers/participants_helper.rb": [
         1,
         null
       ],
-      "/home/ubuntu/workspace/app/helpers/sessions_helper.rb": [
+      "/Users/viktharien/Desktop/RubymineProjects/cn_ego/app/helpers/sessions_helper.rb": [
         1,
         null
       ],
-      "/home/ubuntu/workspace/app/helpers/statics_helper.rb": [
+      "/Users/viktharien/Desktop/RubymineProjects/cn_ego/app/helpers/statics_helper.rb": [
         1,
         null
       ],
-      "/home/ubuntu/workspace/app/helpers/users_helper.rb": [
+      "/Users/viktharien/Desktop/RubymineProjects/cn_ego/app/helpers/users_helper.rb": [
         1,
         null
       ],
-      "/home/ubuntu/workspace/app/controllers/participants_controller.rb": [
+      "/Users/viktharien/Desktop/RubymineProjects/cn_ego/app/controllers/participants_controller.rb": [
         1,
         1,
         1,
@@ -477,7 +576,7 @@
         null,
         null
       ],
-      "/home/ubuntu/workspace/app/controllers/application_controller.rb": [
+      "/Users/viktharien/Desktop/RubymineProjects/cn_ego/app/controllers/application_controller.rb": [
         1,
         1,
         null,
@@ -489,35 +588,35 @@
         1,
         1,
         1,
-        null,
-        null,
-        null
-      ],
-      "/home/ubuntu/workspace/spec/models/participant_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
         null,
         null,
         null
       ],
-      "/home/ubuntu/workspace/app/models/participant.rb": [
+      "/Users/viktharien/Desktop/RubymineProjects/cn_ego/spec/models/participant_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/viktharien/Desktop/RubymineProjects/cn_ego/app/models/participant.rb": [
         1,
         1,
         1,
@@ -538,12 +637,12 @@
         null,
         null
       ],
-      "/home/ubuntu/workspace/app/models/application_record.rb": [
+      "/Users/viktharien/Desktop/RubymineProjects/cn_ego/app/models/application_record.rb": [
         1,
         1,
         null
       ],
-      "/home/ubuntu/workspace/spec/models/user_spec.rb": [
+      "/Users/viktharien/Desktop/RubymineProjects/cn_ego/spec/models/user_spec.rb": [
         1,
         null,
         1,
@@ -572,7 +671,7 @@
         null,
         null
       ],
-      "/home/ubuntu/workspace/app/models/user.rb": [
+      "/Users/viktharien/Desktop/RubymineProjects/cn_ego/app/models/user.rb": [
         1,
         1,
         null,
@@ -581,6 +680,6 @@
         null
       ]
     },
-    "timestamp": 1532379720
+    "timestamp": 1532655193
   }
 }
