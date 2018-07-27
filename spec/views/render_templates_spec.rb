@@ -59,7 +59,7 @@ end
 RSpec.describe UsersController, type: :controller do
 
   it "renders edit template" do
-    participant = create(:user)
+    user = create(:user)
     get :edit, params: { id: user.to_param }
 
     expect(response).to render_template :edit
