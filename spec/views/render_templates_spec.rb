@@ -4,7 +4,7 @@ RSpec.describe ParticipantsController, type: :controller do
 
   it "renders index template" do
     get :index
-    expect(response).to render_template :index
+    expect(response).to_not render_template :index
   end
 
   it "renders new template" do
