@@ -1,1 +1,6 @@
 
+[test for csv import and setup participants controller with import action tied to model self.import]
+### 27/07/2018[11:20 - 12:21]:
+* write import csv method and pass csv feature spec
+
+What's Next? setup integration testing with capybara for views
