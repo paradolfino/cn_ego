@@ -81,6 +81,7 @@ class ParticipantsController < ApplicationController
   end
 
   def import
+    Participant.import(params[:file])
     redirect_to root_path
   end
   
