@@ -11,7 +11,10 @@ RSpec.describe ParticipantsController, type: :controller do
   end
 
   it "renders edit template" do
+    participant = create(:participant)
+    get :edit, params: { id: participant.to_param }
 
+    expect(response).to render_template :edit
   end
 
   it "renders show template" do
