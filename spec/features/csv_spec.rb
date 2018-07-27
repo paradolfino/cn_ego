@@ -4,6 +4,10 @@ RSpec.describe ParticipantsController, type: :controller do
   context "POST #import" do
 
     it "redirects to the home page" do
+      expect(response).to redirect_to root_path
+    end
+
+    it "redirects to the home page after post" do
       allow(Participant).to receive(:import).with("foo.csv")
       post :import, file: "foo.csv"
       expect(response).to redirect_to root_path
