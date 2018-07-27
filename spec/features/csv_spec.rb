@@ -26,5 +26,4 @@ RSpec.describe ParticipantsController, type: :controller do
     end
   end
 
-  end
 end
