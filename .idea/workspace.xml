@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce3edc79-3b11-413e-8d7f-da8c79a444e3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/views/statics/home.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/statics/home.html.erb" afterDir="false" />
-    </list>
+    <list default="true" id="ce3edc79-3b11-413e-8d7f-da8c79a444e3" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -37,7 +35,7 @@
         <entry file="file://$PROJECT_DIR$/app/views/statics/home.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+              <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -312,7 +310,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13584000" />
+    <option name="totallyTimeSpent" value="13706000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="0" />
@@ -612,7 +610,7 @@
     <entry file="file://$PROJECT_DIR$/app/views/statics/home.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+          <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
         </state>
       </provider>
     </entry>
