@@ -37,3 +37,4 @@
 27/07/2018: 11:20 - 12:21:pool[write import csv method and pass csv feature spec]
 27/07/2018: 13:17 - 14:25:pool[write template render tests for views]
 28/07/2018: 19:01 - 19:20:pool[add basic html struct to statics/home]
+28/07/2018: 19:20 - 19:32:pool[add footer partial]
