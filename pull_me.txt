@@ -1,10 +1,7 @@
 
-[add basic css and html for home, footer, and header]
-### 30/07/2018[09:36 - 11:35]:
-* create header partial
-* move header and footer partials to layout
-* add css to home page
-* add css to footer
-* add css to header
+[add css for forms and fix routing/redirect]
+### 30/07/2018[12:29 - 15:01]:
+* add css to forms
+* fix: routing and redirect on login
 
-What's Next? style form partials and participant views
+What's Next? css for participants

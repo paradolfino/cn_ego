@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
   root 'statics#home'
-  get 'login', to: 'sessions#new'
-  post 'login', to: 'sessions#create'
-  get 'logout', to: 'sessions#destroy'
-  resources :users, only: [:edit, :update]
+  get 'admin/login', to: 'sessions#new'
+  post 'admin/login', to: 'sessions#create'
+  get 'admin/logout', to: 'sessions#destroy'
+  get 'admin/edit', to: 'users#edit'
+  post 'admin/edit', to: 'users#update'
   resources :participants do
     collection { post :import}
   end
