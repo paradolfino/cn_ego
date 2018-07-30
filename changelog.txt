@@ -44,3 +44,4 @@
 30/07/2018: 10:55 - 11:22:pool[add css to footer]
 30/07/2018: 11:22 - 11:35:pool[add css to header]
 30/07/2018: 12:29 - 14:56:pool[add css to forms]
+30/07/2018: 14:56 - 15:01:pool[fix: routing and redirect on login]
