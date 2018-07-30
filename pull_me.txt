@@ -1,6 +1,10 @@
 
-[add tests for rendering view templates]
-### 27/07/2018[13:17 - 14:25]:
-* write template render tests for views
+[add basic css and html for home, footer, and header]
+### 30/07/2018[09:36 - 11:35]:
+* create header partial
+* move header and footer partials to layout
+* add css to home page
+* add css to footer
+* add css to header
 
-What's Next? add import csv function to participants index
+What's Next? style form partials and participant views
