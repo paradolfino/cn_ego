@@ -1,9 +1,9 @@
 <div>
   <%= form_for @user do |f| %>
-      <p><%= f.text_field :name, placeholder: "Enter a Name" %></p>
-      <p><%= f.text_field :email, placeholder: "Enter an Email" %></p>
-      <p><%= f.password_field :password, placeholder: "Enter a new Password" %></p>
-      <p><%= f.password_field :password_confirmation, placeholder: "Reenter new Password" %></p>
-      <%= f.submit "Update" %>
+      <p><%= f.text_field :name, placeholder: "Enter a Name", class: "form-field" %></p>
+      <p><%= f.text_field :email, placeholder: "Enter an Email", class: "form-field" %></p>
+      <p><%= f.password_field :password, placeholder: "Enter a new Password", class: "form-field" %></p>
+      <p><%= f.password_field :password_confirmation, placeholder: "Reenter new Password", class: "form-field" %></p>
+      <%= f.submit "Update", class: "form-btn" %>
   <% end %>
 </div>

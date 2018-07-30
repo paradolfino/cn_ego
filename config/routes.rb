@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   root 'statics#home'
-  get 'admin/login', to: 'sessions#new'
+  get 'admin/login', to: 'sessions#new', as: "login"
   post 'admin/login', to: 'sessions#create'
-  get 'admin/logout', to: 'sessions#destroy'
+  get 'admin/logout', to: 'sessions#destroy', as: "logout"
   get 'admin/edit', to: 'users#edit'
   post 'admin/edit', to: 'users#update'
   resources :participants do
