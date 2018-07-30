@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root 'statics#home'
   get 'admin/login', to: 'sessions#new', as: "login"
-  post 'admin/login', to: 'sessions#create'
+  post 'admin/login', to: 'sessions#create', as: "login"
   get 'admin/logout', to: 'sessions#destroy', as: "logout"
   get 'admin/edit', to: 'users#edit'
   post 'admin/edit', to: 'users#update'
