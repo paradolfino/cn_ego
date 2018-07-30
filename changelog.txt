@@ -46,3 +46,4 @@
 30/07/2018: 12:29 - 14:56:pool[add css to forms]
 30/07/2018: 14:56 - 15:01:pool[fix: routing and redirect on login]
 30/07/2018: 16:05 - 16:10:pool[fix: change input css to form-field class]
+30/07/2018: 16:10 - 16:40:pool[add form-btn class]
