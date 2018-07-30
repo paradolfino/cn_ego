@@ -14,4 +14,14 @@
  *= require_self
  */
  
- @import "toastr";
+@import "toastr";
+
+.content {
+  margin: 0 auto;
+  height: 500px;
+  width: 700px;
+}
+
+body {
+  background: #cfcfcf;
+}
