@@ -40,3 +40,4 @@
 28/07/2018: 19:20 - 19:32:pool[add footer partial]
 30/07/2018: 09:36 - 09:38:pool[create header partial]
 30/07/2018: 09:38 - 09:40:pool[move header and footer partials to layout]
+30/07/2018: 09:40 - 10:55:pool[add css to home page]
