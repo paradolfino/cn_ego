@@ -43,3 +43,4 @@
 30/07/2018: 09:40 - 10:55:pool[add css to home page]
 30/07/2018: 10:55 - 11:22:pool[add css to footer]
 30/07/2018: 11:22 - 11:35:pool[add css to header]
+30/07/2018: 12:29 - 14:56:pool[add css to forms]
