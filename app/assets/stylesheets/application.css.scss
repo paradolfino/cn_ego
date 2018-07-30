@@ -21,6 +21,9 @@
   height: 500px;
   width: 800px;
   background: #fff;
+  -webkit-box-shadow: inset hoff voff blur #000;
+  -moz-box-shadow: inset hoff voff blur #000;
+  box-shadow: inset hoff voff blur #000;
 
   display: flex;
   justify-content: center;
