@@ -12,8 +12,17 @@ class Participant < ApplicationRecord
     end
     
     def self.import(file)
-        CSV.foreach(file.path, headers: true, header_converters: :symbol) do |row|
-            Participant.create!(row.to_hash)
+        if file
+            CSV.foreach(file.path, headers: true, header_converters: :symbol) do |row|
+                new_row = row.to_hash.delete_if { |k, v| k.nil? }
+                begin
+                    Participant.create(new_row)
+                rescue StandardError => e
+                    flash[:alert] = e.message
+                    redirect_to participants_path
+                end
+
+            end
         end
     end
 end

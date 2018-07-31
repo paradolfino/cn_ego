@@ -81,9 +81,18 @@ class ParticipantsController < ApplicationController
   end
 
   def import
+    parts = Participant.all.count
     Participant.import(params[:file])
-    flash[:notice] = "Participants imported!"
-    redirect_to participants_path
+    if Participant.all.count <= parts
+      flash[:alert] = "There was an error with importing these participants. Make sure they don't already exist or that the file is in the correct format."
+      redirect_to participants_path
+    else
+      flash[:notice] = "Participants imported!"
+      redirect_to participants_path
+
+    end
+
+
   end
   
   private
