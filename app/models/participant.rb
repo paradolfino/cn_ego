@@ -18,7 +18,6 @@ class Participant < ApplicationRecord
                 begin
                     Participant.create(new_row)
                 rescue StandardError => e
-                    flash[:alert] = e.message
                     redirect_to participants_path
                 end
 
