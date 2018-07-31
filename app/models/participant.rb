@@ -18,7 +18,7 @@ class Participant < ApplicationRecord
                 begin
                     Participant.create(new_row)
                 rescue StandardError => e
-                    redirect_to participants_path
+                    puts e.message
                 end
 
             end
