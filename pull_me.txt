@@ -1,1 +1,8 @@
 
+[fix: css to have min width and to work better with longer lists of participants - also add error handling for import method]
+### 31/07/2018[16:23 - 16:57]:
+* fix: layout and participants css to work with large lists of participants
+* add flash messages for inc and dec methods
+* fix: on error in model import method log error instead of redirect
+
+What's Next? add css for participant show page and add more styling/html to some forms

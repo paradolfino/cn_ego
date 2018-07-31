@@ -49,3 +49,4 @@
 30/07/2018: 16:10 - 16:40:pool[add form-btn class]
 31/07/2018: 16:23 - 16:38:pool[fix: layout and participants css to work with large lists of participants]
 31/07/2018: 16:38 - 16:46:pool[add flash messages for inc and dec methods]
+31/07/2018: 16:46 - 16:57:pool[fix: on error in model import method log error instead of redirect]
