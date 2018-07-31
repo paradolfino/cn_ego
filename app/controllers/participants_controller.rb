@@ -72,11 +72,13 @@ class ParticipantsController < ApplicationController
   
   def inc
     @participant.increment!(:points, by=@amount)
+    flash[:notice] = "#{@participant.name}'s points increased by #{@amount}.'"
     redirect_to participants_path
   end
   
   def dec
     @participant.decrement!(:points, by=@amount)
+    flash[:notice] = "#{@participant.name}'s points decreased by #{@amount}.'"
     redirect_to participants_path
   end
 
