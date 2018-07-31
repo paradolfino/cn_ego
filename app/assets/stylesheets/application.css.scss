@@ -21,7 +21,7 @@
   height: 100px;
   color: #fff;
   background: #339966;
-
+  min-width: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,7 +31,7 @@
   margin-top: 50px;
   height: 100px;
   background: #339966;
-
+  min-width: 800px;
 
   display: flex;
   justify-content: center;
@@ -50,16 +50,17 @@
 
 .content {
   margin: 0 auto;
-  height: 500px;
-  width: 800px;
+  height: 700px;
+  width: 80%;
   background: #fff;
   border: 1.5px solid #e6e6e6;
   border-radius: 20px;
-
+  min-width: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  overflow: auto;
 }
 
 .form-field {
