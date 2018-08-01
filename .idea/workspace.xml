@@ -74,7 +74,7 @@
       <file leaf-file-name="render_templates_spec.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/views/render_templates_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
+            <state relative-caret-position="151">
               <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
             </state>
           </provider>
@@ -432,7 +432,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37199000" />
+    <option name="totallyTimeSpent" value="37872000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="6" />
@@ -763,7 +763,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/views/render_templates_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
+        <state relative-caret-position="151">
           <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
         </state>
       </provider>
