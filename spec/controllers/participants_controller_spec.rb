@@ -29,7 +29,7 @@ RSpec.describe ParticipantsController, type: :controller do
 
   describe "POST #create" do
     it "creates a new participant" do
-      before { post :create, { participant: { name: "name", points: "lol" } } }
+      before { post :create, { participant: { name: "name", points: "100" } } }
     end
 
   end
