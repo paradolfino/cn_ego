@@ -29,7 +29,6 @@ RSpec.describe ParticipantsController, type: :controller do
 
   describe "POST #create" do
     it "creates a new participant" do
-      part = create(:participant)
       expect{
         post :create, part: FactoryBot.attributes_for(:participant)
       }.to change(Participant,:count).by(1)
