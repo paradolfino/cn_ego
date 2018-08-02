@@ -57,6 +57,36 @@ RSpec.describe ParticipantsController, type: :controller do
 
   end
 
+  describe "POST #update" do
+
+    let(:participant) {create(:participant)}
+    let(:valid_attributes) { attributes_for(:participant )}
+    let(:invalid_attributes) { attributes_for(:invalid_both)}
+
+    it "updates a participant" do
+      expect{
+        post :update, params: {participant: valid_attributes}
+      }.to change(Participant, :count).by(1)
+    end
+
+    it "redirects on update" do
+      post :update, params: {participant: valid_attributes}
+      expect(response).to redirect_to(participants_path)
+    end
+
+    it "fails to update participant" do
+
+      expect(build(:invalid_both)).to be_invalid
+
+    end
+
+    it "renders new template on failure to update participant" do
+      post :create, params: {participant: invalid_attributes}
+      expect(response).to render_template :new
+    end
+
+  end
+
   describe "GET #show" do
     it "returns http success" do
       part = create(:participant)
