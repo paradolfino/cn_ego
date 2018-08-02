@@ -31,8 +31,8 @@ RSpec.describe ParticipantsController, type: :controller do
     it "creates a new participant" do
       part = create(:participant)
       expect{
-        post :create, contact: Factory.attributes_for(:contact)
-      }.to change(Contact,:count).by(1)
+        post :create, participant: Factory.attributes_for(:participant)
+      }.to change(Participant,:count).by(1)
     end
 
   end
