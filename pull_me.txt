@@ -1,1 +1,6 @@
 
+[continue writing coverage tests for participants controller spec]
+### 02/08/2018[15:12 - 15:49]:
+* finish writing coverage tests for participants controller
+
+What's Next? finish adding coverage tests for update action
