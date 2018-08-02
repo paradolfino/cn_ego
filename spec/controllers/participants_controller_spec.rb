@@ -7,6 +7,10 @@ RSpec.describe ParticipantsController, type: :controller do
       get :index
       expect(response).to have_http_status(:success)
     end
+    it "assigns @participants to Participant.all" do
+      get :index
+      expect(assigns(:participants).to eq(Participant.all))
+    end
   end
 
   describe "GET #new" do
