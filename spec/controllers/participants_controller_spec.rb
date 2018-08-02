@@ -28,9 +28,15 @@ RSpec.describe ParticipantsController, type: :controller do
   end
 
   describe "POST #create" do
+
+    let(:participant) {create(:participant)}
+    let(:valid_attributes) { attributes_for(:participant }
+    let(:invalid_attributes) { attributes_for(:invalid_both)}
+
     it "creates a new participant" do
-      before { post :create, { participant: { name: "name", points: "100" } } }
-      specify("should created one my_model") { change{ Participant.count }.from(0).to(1) }
+      expect{
+        post :create, params: {task: valid_attributes}
+      }.to change(Task, :count).by(1)
     end
 
   end
