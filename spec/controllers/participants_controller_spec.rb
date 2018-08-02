@@ -18,7 +18,7 @@ RSpec.describe ParticipantsController, type: :controller do
 
   describe "GET #show" do
     it "returns http success" do
-      part = build(:participant)
+      part = create(:participant)
       get :show, params: {id: part.to_param}
       expect(response).to have_http_status(:success)
     end
