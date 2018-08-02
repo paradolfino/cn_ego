@@ -26,7 +26,7 @@ RSpec.describe ParticipantsController, type: :controller do
     it "assigns @task to a Task" do
       part = create(:participant)
       get :show, params: {id: part.to_param}
-      expect(assigns(:participant)).to
+      expect(assigns(:participant)).to eq(part)
     end
   end
 
