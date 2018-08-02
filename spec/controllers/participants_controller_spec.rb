@@ -83,7 +83,7 @@ RSpec.describe ParticipantsController, type: :controller do
     end
 
     it "renders edit template on failure to update participant" do
-      patch :update, params: {id: participant.to_param,participant: new_attributes}
+      patch :update, params: {id: participant.to_param,participant: invalid_attributes}
       expect(response).to render_template :edit
     end
 
