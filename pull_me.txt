@@ -1,6 +1,6 @@
 
-[begin add coverage tests for participants controller]
-### 02/08/2018[10:24 - 11:57]:
-* write coverage tests for participants controller
+[continue writing coverage tests for participants controller spec]
+### 02/08/2018[15:12 - 15:49]:
+* finish writing coverage tests for participants controller
 
-What's Next? finish add coverage tests for participants controller
+What's Next? finish adding coverage tests for update action

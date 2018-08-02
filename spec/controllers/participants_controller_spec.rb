@@ -28,9 +28,61 @@ RSpec.describe ParticipantsController, type: :controller do
   end
 
   describe "POST #create" do
+
+    let(:participant) {create(:participant)}
+    let(:valid_attributes) { attributes_for(:participant )}
+    let(:invalid_attributes) { attributes_for(:invalid_both)}
+
     it "creates a new participant" do
-      before { post :create, { participant: { name: "name", points: "100" } } }
-      specify("should created one my_model") { change{ Participant.count }.from(0).to(1) }
+      expect{
+        post :create, params: {participant: valid_attributes}
+      }.to change(Participant, :count).by(1)
+    end
+
+    it "redirects on save" do
+        post :create, params: {participant: valid_attributes}
+        expect(response).to redirect_to(participants_path)
+    end
+
+    it "fails to create a new participant" do
+
+      expect(build(:invalid_both)).to be_invalid
+
+    end
+
+    it "renders new template on failure to save new participant" do
+      post :create, params: {participant: invalid_attributes}
+      expect(response).to render_template :new
+    end
+
+  end
+
+  describe "POST #update" do
+
+    let(:participant) {create(:participant)}
+    let(:valid_attributes) { attributes_for(:participant )}
+    let(:invalid_attributes) { attributes_for(:invalid_both)}
+
+    it "updates a participant" do
+      expect{
+        post :update, params: {participant: valid_attributes}
+      }.to change(Participant, :count).by(1)
+    end
+
+    it "redirects on update" do
+      post :update, params: {participant: valid_attributes}
+      expect(response).to redirect_to(participants_path)
+    end
+
+    it "fails to update participant" do
+
+      expect(build(:invalid_both)).to be_invalid
+
+    end
+
+    it "renders new template on failure to update participant" do
+      post :update, params: {participant: invalid_attributes}
+      expect(response).to render_template :new
     end
 
   end
