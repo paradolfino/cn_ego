@@ -44,6 +44,12 @@ RSpec.describe ParticipantsController, type: :controller do
         expect(response).to redirect_to(participants_path)
     end
 
+    it "fails to create a new participant" do
+      expect{
+        post :create, params: {participant: valid_attributes}
+      }.to_not change(Participant, :count).by(1)
+    end
+
   end
 
   describe "GET #show" do
