@@ -8,8 +8,9 @@ RSpec.describe ParticipantsController, type: :controller do
       expect(response).to have_http_status(:success)
     end
     it "assigns @participants to Participant.all" do
+      participants = Participant.create
       get :index
-      expect(assigns(:participants)).to eq()
+      expect(assigns(:participants)).to eq([participants])
     end
   end
 
