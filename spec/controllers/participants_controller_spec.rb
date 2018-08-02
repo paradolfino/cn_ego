@@ -66,12 +66,12 @@ RSpec.describe ParticipantsController, type: :controller do
 
     it "updates a participant" do
       expect{
-        post :update, params: {participant: valid_attributes}
+        patch :update, params: {participant: valid_attributes}
       }.to change(Participant, :count).by(1)
     end
 
     it "redirects on update" do
-      post :update, params: {participant: valid_attributes}
+      patch :update, params: {participant: valid_attributes}
       expect(response).to redirect_to(participants_path)
     end
 
@@ -82,7 +82,7 @@ RSpec.describe ParticipantsController, type: :controller do
     end
 
     it "renders new template on failure to update participant" do
-      post :update, params: {participant: invalid_attributes}
+      patch :update, params: {participant: invalid_attributes}
       expect(response).to render_template :new
     end
 
