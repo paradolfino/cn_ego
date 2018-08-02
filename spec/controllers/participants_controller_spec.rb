@@ -46,8 +46,7 @@ RSpec.describe ParticipantsController, type: :controller do
 
     it "fails to create a new participant" do
 
-      post :create, params: {participant: :invalid_both.to_param}
-      puts response
+      expect(build(:invalid_both)).to be_invalid
 
     end
 
