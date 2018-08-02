@@ -50,6 +50,8 @@ RSpec.describe ParticipantsController, type: :controller do
 
     end
 
+    it "renders new template on failure to save new participant"
+
   end
 
   describe "GET #show" do
