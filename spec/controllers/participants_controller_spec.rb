@@ -27,6 +27,14 @@ RSpec.describe ParticipantsController, type: :controller do
     end
   end
 
+  describe "POST #create" do
+    it "creates a new participant" do
+      part = Participant.create!(:participant)
+      expect
+    end
+
+  end
+
   describe "GET #show" do
     it "returns http success" do
       part = create(:participant)
