@@ -65,9 +65,9 @@ RSpec.describe ParticipantsController, type: :controller do
     let(:invalid_attributes) { attributes_for(:invalid_both)}
 
     it "updates a participant" do
-
         patch :update, params: {participant: new_attributes}
-
+        participant.reload
+        expect(participant)
     end
 
     it "redirects on update" do
