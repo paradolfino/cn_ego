@@ -9,7 +9,7 @@ RSpec.describe ParticipantsController, type: :controller do
     end
     it "assigns @participants to Participant.all" do
       get :index
-      expect(assigns(:participants)).to eq(Participant.all)
+      expect(assigns(:participants)).to eq()
     end
   end
 
