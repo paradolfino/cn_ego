@@ -50,7 +50,10 @@ RSpec.describe ParticipantsController, type: :controller do
 
     end
 
-    it "renders new template on failure to save new participant"
+    it "renders new template on failure to save new participant" do
+      participant = build(:invalid_both)
+      expect(response).to render_template :new
+    end
 
   end
 
