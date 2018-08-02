@@ -35,8 +35,8 @@ RSpec.describe ParticipantsController, type: :controller do
 
     it "creates a new participant" do
       expect{
-        post :create, params: {task: valid_attributes}
-      }.to change(Task, :count).by(1)
+        post :create, params: {participant: valid_attributes}
+      }.to change(Participant, :count).by(1)
     end
 
   end
