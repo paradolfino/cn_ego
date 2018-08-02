@@ -50,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/app/controllers/participants_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="192">
-              <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+              <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -433,12 +433,12 @@
       <workItem from="1532957602739" duration="14023000" />
       <workItem from="1533052988472" duration="5690000" />
       <workItem from="1533153259056" duration="1239000" />
-      <workItem from="1533218050924" duration="7515000" />
+      <workItem from="1533218050924" duration="7530000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46642000" />
+    <option name="totallyTimeSpent" value="46657000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="0" />
@@ -758,7 +758,7 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/participants_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
-          <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
         </state>
       </provider>
     </entry>
