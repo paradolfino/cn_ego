@@ -22,6 +22,12 @@ RSpec.describe ParticipantsController, type: :controller do
       get :show, params: {id: part.to_param}
       expect(response).to have_http_status(:success)
     end
+
+    it "returns http success" do
+      part = create(:participant)
+      get :show, params: {id: part.to_param}
+      expect(response).to have_http_status(:success)
+    end
   end
 
   describe "GET #edit" do
