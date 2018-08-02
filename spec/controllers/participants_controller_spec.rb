@@ -66,12 +66,12 @@ RSpec.describe ParticipantsController, type: :controller do
 
     it "updates a participant" do
       expect{
-        patch :update, params: {participant: valid_attributes}
+        patch :update, params: {participant: new_attributes}
       }.to change(Participant, :count).by(1)
     end
 
     it "redirects on update" do
-      patch :update, params: {participant: valid_attributes}
+      patch :update, params: {participant: new_attributes}
       expect(response).to redirect_to(participants_path)
     end
 
