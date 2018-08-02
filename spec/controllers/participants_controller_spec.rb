@@ -15,7 +15,7 @@ RSpec.describe ParticipantsController, type: :controller do
       expect(response).to have_http_status(:success)
     end
 
-    it "assigns @task to a new Participant" do
+    it "assigns @participant to a new Participant" do
       part = create(:participant)
       get :new, params: {id: part.to_param}
       expect(assigns(:participant)).to be_a_new(Participant)
