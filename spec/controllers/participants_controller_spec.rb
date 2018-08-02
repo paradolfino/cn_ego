@@ -61,16 +61,18 @@ RSpec.describe ParticipantsController, type: :controller do
 
     let(:participant) {create(:participant)}
     let(:valid_attributes) { attributes_for(:participant )}
+    let(:new_attributes) { attributes_for(:updated_participant)}
     let(:invalid_attributes) { attributes_for(:invalid_both)}
 
     it "updates a participant" do
-      expect{
-        post :update, params: {participant: valid_attributes}
-      }.to change(Participant, :count).by(1)
+        patch :update, params: {id: participant.to_param,participant: new_attributes}
+        participant.reload
+        expect(participant.name).to eq("test2")
+        expect(participant.points).to eq(800)
     end
 
     it "redirects on update" do
-      post :update, params: {participant: valid_attributes}
+      patch :update, params: {id: participant.to_param,participant: new_attributes}
       expect(response).to redirect_to(participants_path)
     end
 
@@ -80,9 +82,9 @@ RSpec.describe ParticipantsController, type: :controller do
 
     end
 
-    it "renders new template on failure to update participant" do
-      post :update, params: {participant: invalid_attributes}
-      expect(response).to render_template :new
+    it "renders edit template on failure to update participant" do
+      patch :update, params: {id: participant.to_param,participant: invalid_attributes}
+      expect(response).to render_template :edit
     end
 
   end
