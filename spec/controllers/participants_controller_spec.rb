@@ -47,6 +47,13 @@ RSpec.describe ParticipantsController, type: :controller do
       get :edit, params: {id: part.to_param}
       expect(response).to have_http_status(:success)
     end
+    it "assigns @participant to a Participant" do
+      part = create(:participant)
+      get :edit, params: {id: part.to_param}
+      expect(assigns(:participant)).to eq(part)
+    end
   end
+
+
 
 end
