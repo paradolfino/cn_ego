@@ -422,6 +422,11 @@
         1,
         null,
         null,
+        1,
+        1,
+        1,
+        null,
+        null,
         null
       ],
       "/Users/viktharien/Desktop/dev/cn_ego/spec/factories/users.rb": [
@@ -648,6 +653,6 @@
         null
       ]
     },
-    "timestamp": 1533239226
+    "timestamp": 1533244751
   }
 }
