@@ -65,7 +65,7 @@ RSpec.describe ParticipantsController, type: :controller do
     let(:invalid_attributes) { attributes_for(:invalid_both)}
 
     it "updates a participant" do
-        patch :update, params: {participant: new_attributes}
+        patch :update, params: {id: participant.to_param,participant: new_attributes}
         participant.reload
         expect(participant.name).to eq("test2")
         expect(participant.points).to eq(800)
