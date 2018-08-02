@@ -61,6 +61,7 @@ RSpec.describe ParticipantsController, type: :controller do
 
     let(:participant) {create(:participant)}
     let(:valid_attributes) { attributes_for(:participant )}
+    let(:new_attributes) { attributes_for(:updated_participant)}
     let(:invalid_attributes) { attributes_for(:invalid_both)}
 
     it "updates a participant" do
