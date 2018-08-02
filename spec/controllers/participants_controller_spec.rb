@@ -24,4 +24,12 @@ RSpec.describe ParticipantsController, type: :controller do
     end
   end
 
+  describe "GET #edit" do
+    it "returns http success" do
+      part = create(:participant)
+      get :edit, params: {id: part.to_param}
+      expect(response).to have_http_status(:success)
+    end
+  end
+
 end
