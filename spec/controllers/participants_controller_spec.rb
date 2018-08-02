@@ -23,10 +23,10 @@ RSpec.describe ParticipantsController, type: :controller do
       expect(response).to have_http_status(:success)
     end
 
-    it "returns http success" do
+    it "assigns @task to a Task" do
       part = create(:participant)
       get :show, params: {id: part.to_param}
-      expect(response).to have_http_status(:success)
+      expect(assigns()
     end
   end
 
