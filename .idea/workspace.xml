@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce3edc79-3b11-413e-8d7f-da8c79a444e3" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/coverage/.resultset.json" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/.resultset.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spec/controllers/participants_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/participants_controller_spec.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -58,8 +60,8 @@
       <file leaf-file-name="participants_controller_spec.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/controllers/participants_controller_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="48" column="48" selection-start-line="48" selection-start-column="48" selection-end-line="48" selection-end-column="48" />
+            <state relative-caret-position="392">
+              <caret line="52" column="63" selection-start-line="52" selection-start-column="63" selection-end-line="52" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -433,12 +435,12 @@
       <workItem from="1532957602739" duration="14023000" />
       <workItem from="1533052988472" duration="5690000" />
       <workItem from="1533153259056" duration="1239000" />
-      <workItem from="1533218050924" duration="7314000" />
+      <workItem from="1533218050924" duration="7351000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46441000" />
+    <option name="totallyTimeSpent" value="46478000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="0" />
@@ -757,8 +759,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/controllers/participants_controller_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="48" column="48" selection-start-line="48" selection-start-column="48" selection-end-line="48" selection-end-column="48" />
+        <state relative-caret-position="392">
+          <caret line="52" column="63" selection-start-line="52" selection-start-column="63" selection-end-line="52" selection-end-column="63" />
         </state>
       </provider>
     </entry>
