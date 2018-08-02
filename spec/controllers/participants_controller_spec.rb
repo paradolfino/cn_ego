@@ -30,7 +30,7 @@ RSpec.describe ParticipantsController, type: :controller do
   describe "POST #create" do
 
     let(:participant) {create(:participant)}
-    let(:valid_attributes) { attributes_for(:participant }
+    let(:valid_attributes) { attributes_for(:participant )}
     let(:invalid_attributes) { attributes_for(:invalid_both)}
 
     it "creates a new participant" do
