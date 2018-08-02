@@ -67,7 +67,8 @@ RSpec.describe ParticipantsController, type: :controller do
     it "updates a participant" do
         patch :update, params: {participant: new_attributes}
         participant.reload
-        expect(participant)
+        expect(participant.name).to eq("test2")
+        expect(participant.points).to eq(800)
     end
 
     it "redirects on update" do
