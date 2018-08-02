@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   resources :participants do
     collection { post :import}
   end
-  get 'participants/:id/update', to: 'participants#update'
+  patch 'participants/:id/update', to: 'participants#update'
   get 'import', to: 'participants#import'
   post 'import', to: 'participants#import'
   get 'admin/increment', to: 'participants#inc', as: "inc"
