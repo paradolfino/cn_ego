@@ -40,9 +40,8 @@ RSpec.describe ParticipantsController, type: :controller do
     end
 
     it "redirects on save" do
-      expect{
         post :create, params: {participant: valid_attributes}
-      }.to redirect_to(participants_path)
+        expect(response).to redirect_to(participants_path)
     end
 
   end
