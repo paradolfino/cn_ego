@@ -30,7 +30,7 @@ RSpec.describe ParticipantsController, type: :controller do
   describe "POST #create" do
     it "creates a new participant" do
       before { post :create, { participant: { name: "name", points: "100" } } }
-      specify("should created one my_model") { change{ MyModel.count }.from(0).to(1) }
+      specify("should created one my_model") { change{ Participant.count }.from(0).to(1) }
     end
 
   end
