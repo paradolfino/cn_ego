@@ -5,8 +5,7 @@ Rails.application.routes.draw do
   get 'admin/logout', to: 'sessions#destroy', as: "logout"
   get 'admin/edit', to: 'users#edit'
   post 'admin/edit', to: 'users#update'
-  get 'participants/:id/edit', to: 'participants#edit'
-  patch 'participants/:id/edit', to: 'participants#update'
+
   resources :participants do
     collection { post :import}
   end
