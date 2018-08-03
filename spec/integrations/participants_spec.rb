@@ -1,13 +1,13 @@
 require 'rails_helper'
 
-feature "tasks/index" do
-  scenario "renders a list of tasks" do
-    create(:homework)
-    create(:email)
+feature "participants/index" do
+  scenario "renders a list of participants" do
+    create(:participant)
+    create(:second_participant)
 
-    visit tasks_path
+    visit participants_path
 
-    expect(page).to have_content('complete homework')
-    expect(page).to have_content("reply to Zack's email")
+    expect(page).to have_content('test')
+    expect(page).to have_content("test2")
   end
 end
