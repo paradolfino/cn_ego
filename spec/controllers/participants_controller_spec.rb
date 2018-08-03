@@ -86,6 +86,16 @@ RSpec.describe ParticipantsController, type: :controller do
       expect(response).to redirect_to(participants_path)
     end
 
+    it "renders a flash message on update" do
+      patch :update, params: {id: participant.to_param,participant: new_attributes}
+      expect(flash[:notice]).to be_present
+    end
+
+    it "renders a flash message on failure to update" do
+      patch :update, params: {id: participant.to_param,participant: invalid_attributes}
+      expect(flash[:alert]).to be_present
+    end
+
     it "fails to update participant" do
 
       expect(build(:invalid_both)).to be_invalid
