@@ -140,7 +140,7 @@ RSpec.describe ParticipantsController, type: :controller do
     it "increases points for participant" do
       part = create(:participant)
 
-      expect{get :inc, params: {id: part.to_param, amount: 10}}.to change(part, :points).by(10)
+      expect{get :inc, params: {id: part.to_param, amount: 10}}.to change(part, :points)
     end
   end
 
