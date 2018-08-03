@@ -1,8 +1,1 @@
 
-[add coverage tests for participants controller]
-### 03/08/2018[10:55 - 11:53]:
-* write flash message tests
-* write coverage tests for inc action
-* run coverage ests
-
-What's Next? work on tests for next feature
