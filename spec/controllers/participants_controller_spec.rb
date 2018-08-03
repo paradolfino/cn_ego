@@ -140,7 +140,7 @@ RSpec.describe ParticipantsController, type: :controller do
     it "increases points for participant" do
       part = create(:participant)
       get :inc, params: {id: part.id, amount: 10}
-      puts response
+      puts response.status
     end
   end
 
