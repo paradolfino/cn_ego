@@ -1,8 +1,7 @@
 
-[add coverage tests for participants controller]
-### 03/08/2018[10:55 - 11:53]:
-* write flash message tests
-* write coverage tests for inc action
-* run coverage ests
+[begin writing integrations tests for participants index]
+### 03/08/2018[13:31 - 14:31]:
+* install and configure database_cleaner
+* write integration tests for participants index
 
-What's Next? work on tests for next feature
+What's Next? continue writing integrations tests
