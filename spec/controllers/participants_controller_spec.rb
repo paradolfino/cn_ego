@@ -44,6 +44,11 @@ RSpec.describe ParticipantsController, type: :controller do
         expect(response).to redirect_to(participants_path)
     end
 
+    it "renders a flash message on save" do
+        post :create, params: {participant: valid_attributes}
+        expect(flash[:notice]).to be_present
+    end
+
     it "fails to create a new participant" do
 
       expect(build(:invalid_both)).to be_invalid
