@@ -139,8 +139,7 @@ RSpec.describe ParticipantsController, type: :controller do
   describe "INC" do
     it "increases points for participant" do
       part = create(:participant)
-      get :inc, params: {id: part.id, amount: 10}
-      puts response.status
+      expect{ part.increment!(:points, by=10) }.to change(part, :points).by(10)
     end
   end
 
