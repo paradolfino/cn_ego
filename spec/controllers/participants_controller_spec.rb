@@ -139,11 +139,11 @@ RSpec.describe ParticipantsController, type: :controller do
   describe "INC" do
     let(:participant) {create(:participant)}
     it "increases points for participant" do
-      part = create(:participant)
-      expect{ part.increment!(:points, by=10) }.to change(part, :points).by(10)
+      expect{ participant.increment!(:points, by=10) }.to change(participant, :points).by(10)
     end
     it "renders a flash message on increment" do
-      get :inc, params
+      get :inc, params: { id: participant.to_param, amount: 10 }
+      
     end
   end
 
