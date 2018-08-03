@@ -49,6 +49,11 @@ RSpec.describe ParticipantsController, type: :controller do
         expect(flash[:notice]).to be_present
     end
 
+    it "renders a flash message on failure to save" do
+      post :create, params: {participant: valid_attributes}
+      expect(flash[:alert]).to be_present
+    end
+
     it "fails to create a new participant" do
 
       expect(build(:invalid_both)).to be_invalid
