@@ -149,7 +149,7 @@ RSpec.describe ParticipantsController, type: :controller do
   describe "DEC" do
     let(:participant) {create(:participant)}
     it "decreases points for participant" do
-      expect{ participant.decrement!(:points, by=10) }.to change(participant, :points).by(10)
+      expect{ participant.decrement!(:points, by=10) }.to change(participant, :points).by(-10)
     end
     it "renders a flash message on decrement" do
       get :dec, params: { id: participant.to_param, amount: 10 }
