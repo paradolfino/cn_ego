@@ -1,7 +1,8 @@
 
-[add coverage tests for participants controller update action]
-### 02/08/2018[17:10 - 17:31]:
-* write factory for new attrs for tests on update method
-* write update action coverage tests
+[add coverage tests for participants controller]
+### 03/08/2018[10:55 - 11:53]:
+* write flash message tests
+* write coverage tests for inc action
+* run coverage ests
 
-What's Next? add inc, dec, and flash message coverage tests
+What's Next? work on tests for next feature

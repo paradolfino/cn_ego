@@ -44,15 +44,25 @@ RSpec.describe ParticipantsController, type: :controller do
         expect(response).to redirect_to(participants_path)
     end
 
+    it "renders a flash message on save" do
+        post :create, params: {participant: valid_attributes}
+        expect(flash[:notice]).to be_present
+    end
+
+    it "renders a flash message on failure to save" do
+      post :create, params: {participant: invalid_attributes}
+      expect(flash[:alert]).to be_present
+    end
+
     it "fails to create a new participant" do
 
       expect(build(:invalid_both)).to be_invalid
 
     end
 
-    it "renders new template on failure to save new participant" do
+    it "redirects to new template on failure to save new participant" do
       post :create, params: {participant: invalid_attributes}
-      expect(response).to render_template :new
+      expect(response).to redirect_to(new_participant_path)
     end
 
   end
@@ -76,15 +86,25 @@ RSpec.describe ParticipantsController, type: :controller do
       expect(response).to redirect_to(participants_path)
     end
 
+    it "renders a flash message on update" do
+      patch :update, params: {id: participant.to_param,participant: new_attributes}
+      expect(flash[:notice]).to be_present
+    end
+
+    it "renders a flash message on failure to update" do
+      patch :update, params: {id: participant.to_param,participant: invalid_attributes}
+      expect(flash[:alert]).to be_present
+    end
+
     it "fails to update participant" do
 
       expect(build(:invalid_both)).to be_invalid
 
     end
 
-    it "renders edit template on failure to update participant" do
+    it "redirects to edit template on failure to update participant" do
       patch :update, params: {id: participant.to_param,participant: invalid_attributes}
-      expect(response).to render_template :edit
+      expect(response).to redirect_to(edit_participant_path(participant))
     end
 
   end
@@ -113,6 +133,27 @@ RSpec.describe ParticipantsController, type: :controller do
       part = create(:participant)
       get :edit, params: {id: part.to_param}
       expect(assigns(:participant)).to eq(part)
+    end
+  end
+
+  describe "INC" do
+    let(:participant) {create(:participant)}
+    it "increases points for participant" do
+      expect{ participant.increment!(:points, by=10) }.to change(participant, :points).by(10)
+    end
+    it "renders a flash message on increment" do
+      get :inc, params: { id: participant.to_param, amount: 10 }
+      expect(flash[:notice]).to be_present
+    end
+  end
+  describe "DEC" do
+    let(:participant) {create(:participant)}
+    it "decreases points for participant" do
+      expect{ participant.decrement!(:points, by=10) }.to change(participant, :points).by(-10)
+    end
+    it "renders a flash message on decrement" do
+      get :dec, params: { id: participant.to_param, amount: 10 }
+      expect(flash[:notice]).to be_present
     end
   end
 
