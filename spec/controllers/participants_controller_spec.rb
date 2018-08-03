@@ -143,7 +143,7 @@ RSpec.describe ParticipantsController, type: :controller do
     end
     it "renders a flash message on increment" do
       get :inc, params: { id: participant.to_param, amount: 10 }
-
+      
     end
   end
 
