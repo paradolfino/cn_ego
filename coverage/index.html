@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-08-03T11:11:08-04:00">2018-08-03T11:11:08-04:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-08-03T11:13:41-04:00">2018-08-03T11:13:41-04:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,7 +25,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.19
+         1.3
        </span>
     </span> hits/line)
   </h2>
@@ -67,7 +67,7 @@
         <td>61</td>
         <td>40</td>
         <td>21</td>
-        <td>1.4</td>
+        <td>1.7</td>
       </tr>
       
       <tr>
@@ -137,7 +137,7 @@
         <td>16</td>
         <td>10</td>
         <td>6</td>
-        <td>1.8</td>
+        <td>2.0</td>
       </tr>
       
       <tr>
@@ -741,20 +741,20 @@
           <code class="ruby">  def update</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="49">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="5" data-linenumber="49">
+          <span class="hits">5</span>
           
           <code class="ruby">    if @participant.update(participant_params)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="50">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="50">
+          <span class="hits">3</span>
           
           <code class="ruby">      flash[:notice] = &quot;Updated Participant Successfully!&quot;</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="51">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="51">
+          <span class="hits">3</span>
           
           <code class="ruby">      redirect_to participants_path</code>
         </li>
@@ -765,20 +765,20 @@
           <code class="ruby">    else</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="53">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="53">
+          <span class="hits">2</span>
           
           <code class="ruby">      @errors = []</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="54">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="54">
+          <span class="hits">2</span>
           
           <code class="ruby">      @participant.errors.full_messages.each do |m|</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="55">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="8" data-linenumber="55">
+          <span class="hits">8</span>
           
           <code class="ruby">        @errors &lt;&lt; m</code>
         </li>
@@ -789,14 +789,14 @@
           <code class="ruby">      end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="57">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="57">
+          <span class="hits">2</span>
           
           <code class="ruby">      flash[:alert] = &quot;Please correct the following errors: #{@errors.join(&quot;. &quot;)}&quot;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="58">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="58">
+          <span class="hits">2</span>
           
           <code class="ruby">      redirect_to edit_participant_path(@participant)</code>
         </li>
@@ -1065,8 +1065,8 @@
           <code class="ruby">    def set_participant</code>
         </li>
       
-        <li class="covered" data-hits="7" data-linenumber="103">
-          <span class="hits">7</span>
+        <li class="covered" data-hits="9" data-linenumber="103">
+          <span class="hits">9</span>
           
           <code class="ruby">      @participant = Participant.friendly.find(params[:id])</code>
         </li>
@@ -1089,8 +1089,8 @@
           <code class="ruby">    def participant_params</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="107">
-          <span class="hits">8</span>
+        <li class="covered" data-hits="10" data-linenumber="107">
+          <span class="hits">10</span>
           
           <code class="ruby">      params.require(:participant).permit(:name, :points)</code>
         </li>
@@ -1414,8 +1414,8 @@
           <code class="ruby">    def should_generate_new_friendly_id?</code>
         </li>
       
-        <li class="covered" data-hits="19" data-linenumber="11">
-          <span class="hits">19</span>
+        <li class="covered" data-hits="23" data-linenumber="11">
+          <span class="hits">23</span>
           
           <code class="ruby">       slug.blank? || name_changed?</code>
         </li>
