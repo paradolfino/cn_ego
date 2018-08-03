@@ -7,7 +7,7 @@ feature "participants/index" do
 
     visit participants_path
 
-    expect(page).to have_content('testsadasd')
+    expect(page).to_not have_content('testsadasd')
     expect(page).to have_content("test2")
   end
 end
