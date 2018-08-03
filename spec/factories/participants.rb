@@ -22,5 +22,10 @@ FactoryBot.define do
       name "test2"
       points 800
     end
+
+    factory :second_participant do
+      name "test2"
+      points 600
+    end
   end
 end
