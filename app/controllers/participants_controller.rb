@@ -32,7 +32,7 @@ class ParticipantsController < ApplicationController
         @errors << m
       end
       flash[:alert] = "Please correct the following errors: #{@errors.join(". ")}"
-      render 'new'
+      redirect_to new_participant_path
     end
     
   end
