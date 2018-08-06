@@ -104,7 +104,7 @@ class ParticipantsController < ApplicationController
     end
     
     def participant_params
-      params.require(:participant).permit(:name, :points)
+      params.permit(:name, :points)
     end
     
     def sanitize_amt
