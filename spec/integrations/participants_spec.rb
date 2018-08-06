@@ -15,7 +15,7 @@ feature "participants/index" do
 
     visit participants_path
     click_button('+')
-
+    expect(participant.points)
   end
 end
 
