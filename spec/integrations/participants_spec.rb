@@ -11,6 +11,12 @@ feature "participants/index" do
     expect(page).to_not have_content('testsadasd')
     expect(page).to have_content("test2")
   end
+  scenario "renders a list of participants and allows for inc points" do
+
+    visit participants_path
+
+    
+  end
 end
 
 feature 'New Participant' do
