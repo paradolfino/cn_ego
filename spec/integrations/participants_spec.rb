@@ -14,7 +14,7 @@ feature "participants/index" do
   scenario "renders a list of participants and allows for inc points" do
 
     visit participants_path
-    field = page.first(:xpath, '//input[type')
+    field = page.first(:xpath, '//input')
     fill_in "points-#{participant.id}", with: 1000
     click_button('+')
     expect(participant.points).to eq(1100)
