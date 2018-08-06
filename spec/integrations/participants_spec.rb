@@ -1,9 +1,10 @@
 require 'rails_helper'
 
 feature "participants/index" do
+
+  let(:participant) {create(:participant)}
+  let(:second_participant) {create(:second_participant)}
   scenario "renders a list of participants" do
-    create(:participant)
-    create(:second_participant)
 
     visit participants_path
 
