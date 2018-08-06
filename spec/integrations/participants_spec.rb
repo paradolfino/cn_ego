@@ -2,8 +2,6 @@ require 'rails_helper'
 
 feature "participants/index" do
   scenario "renders a list of participants" do
-    user = FactoryBot.create(:user)
-    login_as(user, :scope => :user)
     create(:participant)
     create(:second_participant)
 
@@ -16,8 +14,6 @@ end
 
 feature 'New Participant' do
   scenario 'user adds a new Participant' do
-    user = FactoryBot.create(:user)
-    login_as(user, :scope => :user)
     visit participants_path
 
     expect{
