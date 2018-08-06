@@ -36,7 +36,7 @@ feature 'Edit Participant' do
 
 
     fill_in 'participant_name', with: 'Test Participant2'
-    fill_in 'participant_points', with: 10
+    fill_in 'participant_points', with: 12
     click_button('Update Participant')
 
     expect(current_path).to eq(participants_path)
