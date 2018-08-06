@@ -24,9 +24,9 @@ feature 'New Participant' do
       fill_in 'Due date', with: DateTime.now
       select(user.email, from: 'task_user_id')
       click_button('Create Task')
-    }.to change(Task, :count).by(1)
+    }.to change(Participant, :count).by(1)
 
-    expect(current_path).to eq(task_path(Task.last.id))
+    expect(current_path).to eq(participants_path)
     expect(page).to have_content('Learn Rspec')
 
   end
