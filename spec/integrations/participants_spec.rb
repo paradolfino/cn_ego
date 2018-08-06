@@ -28,3 +28,19 @@ feature 'New Participant' do
 
   end
 end
+
+feature 'Edit Participant' do
+  scenario 'user edits an existing Participant' do
+    participant = create(:participant)
+    visit participant_path(participant.id)
+
+
+    fill_in 'participant_name', with: 'Test Participant2'
+    fill_in 'participant_points', with: 10
+    click_button('Update Participant')
+
+    expect(current_path).to eq(participants_path)
+    expect(page).to have_content('Test Participant2')
+
+  end
+end
