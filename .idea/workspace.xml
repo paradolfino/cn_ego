@@ -77,8 +77,8 @@
       <file leaf-file-name="participants_spec.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/integrations/participants_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
+            <state relative-caret-position="257">
+              <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -459,12 +459,12 @@
       <workItem from="1533241959738" duration="3518000" />
       <workItem from="1533306671434" duration="3881000" />
       <workItem from="1533329661465" duration="1019000" />
-      <workItem from="1533561458987" duration="1114000" />
+      <workItem from="1533561458987" duration="1147000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60379000" />
+    <option name="totallyTimeSpent" value="60412000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="0" />
@@ -795,8 +795,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/integrations/participants_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
+        <state relative-caret-position="257">
+          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
         </state>
       </provider>
     </entry>

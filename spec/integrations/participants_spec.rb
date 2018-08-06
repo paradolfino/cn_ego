@@ -21,7 +21,7 @@ feature 'New Participant' do
       click_link 'New'
       fill_in 'Name', with: 'Test Participant'
       fill_in 'Points', with: 10
-      click_button('Create Task')
+      click_button('Create Participant')
     }.to change(Participant, :count).by(1)
 
     expect(current_path).to eq(participants_path)
