@@ -15,7 +15,7 @@ feature "participants/index" do
 
     visit participants_path
     field = page.all(:xpath, '//input')
-    p field
+    field.each {|f| puts f[:id]}
     #fill_in
     click_button('+')
     expect(participant.points).to eq(1100)
