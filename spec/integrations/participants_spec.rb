@@ -3,9 +3,9 @@ require 'rails_helper'
 feature "participants/index" do
 
   let(:participant) {create(:participant)}
-  let(:second_participant) {create(:second_participant)}
-  scenario "renders a list of participants" do
 
+  scenario "renders a list of participants" do
+    create(:second_participant)
     visit participants_path
 
     expect(page).to_not have_content('testsadasd')
@@ -15,7 +15,7 @@ feature "participants/index" do
 
     visit participants_path
 
-    
+
   end
 end
 
