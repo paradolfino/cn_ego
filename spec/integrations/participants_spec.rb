@@ -32,7 +32,7 @@ end
 feature 'Edit Participant' do
   scenario 'user edits an existing Participant' do
     participant = create(:participant)
-    visit participant_path(participant.id)
+    visit edit_participant_path(participant.id)
 
 
     fill_in 'participant_name', with: 'Test Participant2'
