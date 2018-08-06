@@ -14,6 +14,7 @@ feature "participants/index" do
   scenario "renders a list of participants and allows for inc points" do
     create(:second_participant)
     visit participants_path
+    wait(10)
     field = page.all(:xpath, '//input')
     field.each {|f| puts f[:name]}
     #fill_in
