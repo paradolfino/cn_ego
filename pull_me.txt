@@ -1,7 +1,1 @@
 
-[begin writing integrations tests for participants index]
-### 03/08/2018[13:31 - 14:31]:
-* install and configure database_cleaner
-* write integration tests for participants index
-
-What's Next? continue writing integrations tests
