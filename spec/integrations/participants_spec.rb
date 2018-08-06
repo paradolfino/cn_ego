@@ -19,15 +19,13 @@ feature 'New Participant' do
 
     expect{
       click_link 'New'
-      fill_in 'Name', with: 'Learn Rspec'
-      fill_in 'Priority', with: 1
-      fill_in 'Due date', with: DateTime.now
-      select(user.email, from: 'task_user_id')
+      fill_in 'Name', with: 'Test Participant'
+      fill_in 'Points', with: 10
       click_button('Create Task')
     }.to change(Participant, :count).by(1)
 
     expect(current_path).to eq(participants_path)
-    expect(page).to have_content('Learn Rspec')
+    expect(page).to have_content('Test Participant')
 
   end
 end
