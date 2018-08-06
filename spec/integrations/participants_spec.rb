@@ -18,7 +18,7 @@ feature 'New Participant' do
     visit participants_path
 
     expect{
-      click_link 'New Task'
+      click_link 'New'
       fill_in 'Name', with: 'Learn Rspec'
       fill_in 'Priority', with: 1
       fill_in 'Due date', with: DateTime.now
