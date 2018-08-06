@@ -14,7 +14,7 @@ feature "participants/index" do
   scenario "renders a list of participants and allows for inc points" do
 
     visit participants_path
-
+    click_button('+')
 
   end
 end
