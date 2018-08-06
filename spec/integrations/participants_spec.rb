@@ -16,7 +16,7 @@ feature "participants/index" do
     visit participants_path
     fill_in 'points', with: 1000
     click_button('+')
-    expect(participant.points)
+    expect(participant.points).to eq(1000)
   end
 end
 
