@@ -518,6 +518,25 @@
         null,
         null
       ],
+      "/Users/viktharien/Desktop/dev/cn_ego/spec/support/wait_for_ajax.rb": [
+        null,
+        1,
+        1,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null
+      ],
       "/Users/viktharien/Desktop/dev/cn_ego/app/models/participant.rb": [
         1,
         1,
@@ -686,6 +705,6 @@
         null
       ]
     },
-    "timestamp": 1533572760
+    "timestamp": 1533587046
   }
 }
