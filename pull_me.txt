@@ -1,7 +1,10 @@
 
-[begin writing integrations tests for participants index]
-### 03/08/2018[13:31 - 14:31]:
-* install and configure database_cleaner
-* write integration tests for participants index
+[add more integration tests for participants index, new, edit view]
+### 06/08/2018[09:18 - 12:27]:
+* continue writing integration tests for participants spec
+* configure capybara to work with devise
+* finish new participant integration test
+* write integration test for edit participant
+* write integration test for participants index - test inc/dec buttons
 
-What's Next? continue writing integrations tests
+What's Next? continue writing integration tests for participants show view
