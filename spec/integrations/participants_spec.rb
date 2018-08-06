@@ -15,7 +15,7 @@ feature "participants/index" do
     create(:second_participant)
     visit participants_path
     field = page.all('//input', text: "0")
-    field.each {|f| puts f[:name]}
+    field.each {|f| puts f[:id]}
     #fill_in
     click_button('+')
     expect(participant.points).to eq(1100)
