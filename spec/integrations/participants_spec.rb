@@ -12,7 +12,7 @@ feature "participants/index" do
     expect(page).to have_content("test2")
   end
   scenario "renders a list of participants and allows for inc points" do
-
+    create(:second_participant)
     visit participants_path
     field = page.all(:xpath, '//input')
     field.each {|f| puts f[:name]}
