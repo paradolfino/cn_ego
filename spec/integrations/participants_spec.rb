@@ -2,6 +2,8 @@ require 'rails_helper'
 
 feature "participants/index" do
   scenario "renders a list of participants" do
+    user = create(:user)
+    sign_in(user)
     create(:participant)
     create(:second_participant)
 
