@@ -1,6 +1,6 @@
 <%= form_for @participant do |f| %>
     <p><%= f.text_field :name, placeholder: "#{@keywords[:name]} the Participant's Name", class: "form-field", name: "Name" %></p>
-    <p><%= f.text_field :points, placeholder: "#{@keywords[:points][0]} the Participant's #{@keywords[:points][1]} Points", class: "form-field" %></p>
+    <p><%= f.text_field :points, placeholder: "#{@keywords[:points][0]} the Participant's #{@keywords[:points][1]} Points", class: "form-field", name: "Points" %></p>
     <p><%= f.submit "#{@keywords[:submit]} Participant", class: "form-btn" %></p>
     
 <% end %>
