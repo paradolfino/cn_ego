@@ -21,8 +21,8 @@ feature 'New Participant' do
 
     expect{
       click_link 'New'
-      fill_in 'attr-name', with: 'Test Participant'
-      fill_in 'attr-points', with: 10
+      fill_in 'name', with: 'Test Participant'
+      fill_in 'points', with: 10
       click_button('Create Participant')
     }.to change(Participant, :count).by(1)
 
