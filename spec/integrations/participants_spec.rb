@@ -2,9 +2,8 @@ require 'rails_helper'
 
 feature "participants/index" do
 
-  let(:participant) {create(:participant)}
-
   scenario "renders a list of participants" do
+    create(:participant)
     create(:second_participant)
     visit participants_path
 
@@ -12,13 +11,14 @@ feature "participants/index" do
     expect(page).to have_content("test2")
   end
   scenario "renders a list of participants and allows for inc points" do
-    create(:second_participant)
+    participant = create(:participant)
     visit participants_path
-    field = page.all('//input', text: "0")
-    field.each {|f| puts f[:id]}
-    #fill_in
-    click_button('+')
-    expect(participant.points).to eq(1100)
+    field = page.find_by_id("points-#{participant.id}")[:id]
+    btn = page.find_by_id("inc-#{participant.id}")[:id]
+    expect {
+      fill_in field, with: "10"
+      click_button(btn)
+    }.to change(participant, :points)
   end
 end
 

@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-08-06T12:26:00-04:00">2018-08-06T12:26:00-04:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-08-06T16:24:06-04:00">2018-08-06T16:24:06-04:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">78.28%</span></span>
+    (<span class="covered_percent"><span class="red">77.78%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.89
+         0.88
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>28</b> files in total.
-    <b>198</b> relevant lines. 
-    <span class="green"><b>155</b> lines covered</span> and
-    <span class="red"><b>43</b> lines missed </span>
+    <b>29</b> files in total.
+    <b>207</b> relevant lines. 
+    <span class="green"><b>161</b> lines covered</span> and
+    <span class="red"><b>46</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -328,6 +328,16 @@
         <td>10</td>
         <td>1</td>
         <td>1.7</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#8bbfa735f182a1d0f194296ba57d1cd8b7b027f6" class="src_link" title="spec/support/wait_for_ajax.rb">spec/support/wait_for_ajax.rb</a></td>
+        <td class="red strong">66.67 %</td>
+        <td>17</td>
+        <td>9</td>
+        <td>6</td>
+        <td>3</td>
+        <td>0.7</td>
       </tr>
       
     </tbody>
@@ -4636,6 +4646,127 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="8bbfa735f182a1d0f194296ba57d1cd8b7b027f6">
+  <div class="header">
+    <h3>spec/support/wait_for_ajax.rb</h3>
+    <h4><span class="red">66.67 %</span> covered</h4>
+    <div>
+      <b>9</b> relevant lines. 
+      <span class="green"><b>6</b> lines covered</span> and
+      <span class="red"><b>3</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="never" data-hits="" data-linenumber="1">
+          
+          
+          <code class="ruby"># spec/support/wait_for_ajax.rb</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">module WaitForAjax</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def wait_for_ajax</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="4">
+          
+          
+          <code class="ruby">    Timeout.timeout(Capybara.default_max_wait_time) do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="5">
+          
+          
+          <code class="ruby">      loop until finished_all_ajax_requests?</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def finished_all_ajax_requests?</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="10">
+          
+          
+          <code class="ruby">    page.evaluate_script(&#39;jQuery.active&#39;).zero?</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">RSpec.configure do |config|</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  Capybara.javascript_driver = :webkit</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  config.include WaitForAjax, type: :feature</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
           
           
           <code class="ruby">end</code>
