@@ -631,6 +631,12 @@
       ],
       "/Users/viktharien/Desktop/dev/cn_ego/app/models/reward.rb": [
         1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/viktharien/Desktop/dev/cn_ego/spec/models/user_spec.rb": [
@@ -671,6 +677,6 @@
         null
       ]
     },
-    "timestamp": 1533649305
+    "timestamp": 1533649413
   }
 }
