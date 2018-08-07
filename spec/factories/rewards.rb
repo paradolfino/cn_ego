@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :reward do
-    name "MyString"
-    cost 1
-    img "MyString"
+    name "Reward One"
+    cost 2000
+    img "image string"
   end
 end
