@@ -24,7 +24,7 @@ FactoryBot.define do
 
     factory :invalid_reward_number do
       name "Reward Five"
-      cost "10"
+      cost "abcsd"
       img "imager"
     end
   end
