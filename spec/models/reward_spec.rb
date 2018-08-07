@@ -10,6 +10,10 @@ RSpec.describe Reward, type: :model do
       expect(build(:invalid_cost)).to be_invalid
     end
 
+    it "should validate presence of image" do
+      expect(build(:invalid_cost)).to be_invalid
+    end
+
     it "should validate numericality" do
       expect(build(:invalid_number)).to be_invalid
     end
