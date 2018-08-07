@@ -21,5 +21,11 @@ FactoryBot.define do
       cost 100
       img nil
     end
+
+    factory :invalid_number do
+      name "Reward Five"
+      cost "10"
+      img "imager"
+    end
   end
 end

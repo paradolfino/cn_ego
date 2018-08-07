@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce3edc79-3b11-413e-8d7f-da8c79a444e3" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/spec/factories/rewards.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/factories/rewards.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spec/models/reward_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/reward_spec.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -37,7 +38,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reward_spec.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="reward_spec.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/models/reward_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
@@ -46,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rewards.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="rewards.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/factories/rewards.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="392">
+              <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -155,8 +156,8 @@
         <option value="$PROJECT_DIR$/spec/support/wait_for_ajax.rb" />
         <option value="$PROJECT_DIR$/spec/rails_helper.rb" />
         <option value="$PROJECT_DIR$/spec/integrations/participants_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/factories/rewards.rb" />
         <option value="$PROJECT_DIR$/spec/models/reward_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/factories/rewards.rb" />
       </list>
     </option>
   </component>
@@ -474,7 +475,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78328000" />
+    <option name="totallyTimeSpent" value="78374000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="0" />
@@ -807,13 +808,6 @@
     <entry file="file://$PROJECT_DIR$/spec/models/user_spec.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/factories/rewards.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/models/participant_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -825,6 +819,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/factories/rewards.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
         </state>
       </provider>
     </entry>
