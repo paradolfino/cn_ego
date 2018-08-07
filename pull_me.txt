@@ -1,1 +1,9 @@
 
+[write coverage tests for reward model]
+### 07/08/2018[09:22 - 09:56]:
+* generate reward model
+* write rewards factory
+* write tests for reward model
+* write passing model validations for reward
+
+What's Next? write coverage tests for rewards controller
