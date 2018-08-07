@@ -2,6 +2,9 @@ require 'rails_helper'
 
 RSpec.describe Reward, type: :model do
   context "validations" do
+    it "validates with valid attributes" do
+      expect(build(:reward)).to be_valid
+    end
     it "should validate presence of name" do
       expect(build(:invalid_reward_name)).to be_invalid
     end
