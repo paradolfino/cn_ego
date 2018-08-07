@@ -17,7 +17,9 @@ FactoryBot.define do
     end
 
     factory :invalid_img do
-
+      name "Reward Four"
+      cost 100
+      img nil
     end
   end
 end
