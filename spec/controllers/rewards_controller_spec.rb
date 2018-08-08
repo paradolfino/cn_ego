@@ -41,7 +41,7 @@ RSpec.describe RewardsController, type: :controller do
 
         let(:reward) {create(:reward)}
         let(:valid_attributes) { attributes_for(:reward )}
-        let(:invalid_attributes) { attributes_for(:invalid_name)}
+        let(:invalid_attributes) { attributes_for(:invalid_reward_name)}
 
         it "creates a new reward" do
           expect{
@@ -82,7 +82,7 @@ RSpec.describe RewardsController, type: :controller do
         let(:reward) {create(:reward)}
         let(:valid_attributes) { attributes_for(:reward )}
         let(:new_attributes) { attributes_for(:updated_reward)}
-        let(:invalid_attributes) { attributes_for(:invalid_both)}
+        let(:invalid_attributes) { attributes_for(:invalid_reward_name)}
 
         it "updates a reward" do
           patch :update, params: {id: reward.to_param,reward: new_attributes}
