@@ -132,5 +132,9 @@ RSpec.describe RewardsController, type: :controller do
         delete :destroy, params: {id: reward.to_param }
         expect(response).to redirect_to(rewards_path)
       end
+      it "renders a flash message after delete" do
+        delete :destroy, params: {id: reward.to_param }
+        expect(flash[:notice]).to be_present
+      end
     end
 end
