@@ -614,6 +614,10 @@
         1,
         5,
         null,
+        null,
+        1,
+        0,
+        null,
         null
       ],
       "/Users/viktharien/Desktop/dev/cn_ego/app/controllers/application_controller.rb": [
@@ -677,6 +681,6 @@
         null
       ]
     },
-    "timestamp": 1533739984
+    "timestamp": 1533740027
   }
 }
