@@ -28,7 +28,7 @@ FactoryBot.define do
       img "imager"
     end
 
-    factory :update_reward do
+    factory :updated_reward do
       name "Updated Reward"
       cost 800
       img "Updated Image"
