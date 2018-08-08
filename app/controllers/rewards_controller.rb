@@ -35,6 +35,8 @@ class RewardsController < ApplicationController
       redirect_to rewards_path
     else
       @errors = errors?(@reward)
+      flash[:alert] = "Please correct the following errors: #{@errors.join(". ")}"
+      redirect_to edit_reward_path(@reward)
     end
   end
 
