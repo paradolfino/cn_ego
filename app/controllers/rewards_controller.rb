@@ -27,6 +27,17 @@ class RewardsController < ApplicationController
     end
   end
 
+  def edit
+
+  end
+
+  def update
+    if @reward.update(reward_params)
+    else
+      
+    end
+  end
+
   private
 
     def reward_params
