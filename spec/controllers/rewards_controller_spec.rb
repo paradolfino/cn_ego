@@ -120,4 +120,15 @@ RSpec.describe RewardsController, type: :controller do
       end
 
     end
+
+    describe "#DELETE" do
+      let(:reward) {create(:reward)}
+      it "destroys a reward" do
+        expect {
+          delete :destroy, params: {id: reward.to_param }
+        }.to change(Participant, :count).by(-1)
+
+
+      end
+    end
 end
