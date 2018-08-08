@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
     helper_method :logged_in?
-    
+    include ErrorRender
     def logged_in?
        session[:user_id] != nil ? true : false
     end

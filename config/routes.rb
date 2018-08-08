@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   resources :participants do
     collection { post :import}
   end
+  resources :rewards
 
   get 'import', to: 'participants#import'
   post 'import', to: 'participants#import'
