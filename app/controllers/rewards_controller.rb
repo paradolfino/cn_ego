@@ -24,4 +24,10 @@ class RewardsController < ApplicationController
       redirect_to new_reward_path
     end
   end
+
+  private
+
+    def reward_params
+      params.require(:reward).permit(:name, :cost, :img)
+    end
 end
