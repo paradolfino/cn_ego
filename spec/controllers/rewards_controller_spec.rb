@@ -32,8 +32,8 @@ RSpec.describe RewardsController, type: :controller do
       end
 
       it "assigns @reward to a new Reward" do
-        part = create(:reward)
-        get :new, params: {id: part.to_param}
+        reward = create(:reward)
+        get :new
         expect(assigns(:reward)).to be_a_new(Reward)
       end
     end
