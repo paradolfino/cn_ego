@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'rewards/index'
+  get 'rewards/show'
   root 'statics#home'
   get 'admin/login', to: 'sessions#new', as: "login"
   post 'admin/login', to: 'sessions#create'
