@@ -136,6 +136,17 @@ RSpec.describe ParticipantsController, type: :controller do
     end
   end
 
+  describe "DELETE #destroy" do
+    let(:participant) {build(:participant)}
+    it "destroys @participant" do
+      participant.save
+      expect {
+        delete :destroy, params: {id: participant.to_param}
+      }.to change(Participant, :count).by(-1)
+
+    end
+  end
+
   describe "INC" do
     let(:participant) {create(:participant)}
     it "increases points for participant" do
