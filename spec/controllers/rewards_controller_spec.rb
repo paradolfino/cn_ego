@@ -1,7 +1,7 @@
 
 require 'rails_helper'
 RSpec.describe RewardsController, type: :controller do
-describe 'GET #index' do
+  describe 'GET #index' do
       it 'returns http success' do
         get :index
         expect(response).to have_http_status(:success)
@@ -12,7 +12,7 @@ describe 'GET #index' do
         expect(assigns(:rewards)).to eq([reward])
       end
     end
-describe 'GET #show' do
+  describe 'GET #show' do
       it 'returns http success' do
         reward = create(:reward)
         get :show, params: {id: reward.to_param}
