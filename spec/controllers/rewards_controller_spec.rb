@@ -50,7 +50,7 @@ RSpec.describe RewardsController, type: :controller do
         }.to change(Reward, :count).by(1)
       end
 
-      it "redirects on save" do
+      it "redirects to rewards_path on save" do
         post :create, params: {reward: valid_attributes}
         expect(response).to redirect_to(rewards_path)
       end
