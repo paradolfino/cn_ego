@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-08-08T11:03:22-04:00">2018-08-08T11:03:22-04:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-08-08T11:05:51-04:00">2018-08-08T11:05:51-04:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,7 +25,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.4
+         1.44
        </span>
     </span> hits/line)
   </h2>
@@ -73,11 +73,11 @@
       <tr>
         <td class="strong"><a href="#3dbd2f726e33992b25d6e636efee95ce9ace5174" class="src_link" title="app/controllers/rewards_controller.rb">app/controllers/rewards_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>48</td>
+        <td>49</td>
         <td>24</td>
         <td>24</td>
         <td>0</td>
-        <td>2.2</td>
+        <td>2.5</td>
       </tr>
       
       <tr>
@@ -778,8 +778,8 @@
           <code class="ruby">  def update</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="33">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="5" data-linenumber="33">
+          <span class="hits">5</span>
           
           <code class="ruby">    if @reward.update(reward_params)</code>
         </li>
@@ -832,8 +832,8 @@
           <code class="ruby">    def reward_params</code>
         </li>
       
-        <li class="covered" data-hits="7" data-linenumber="42">
-          <span class="hits">7</span>
+        <li class="covered" data-hits="10" data-linenumber="42">
+          <span class="hits">10</span>
           
           <code class="ruby">      params.require(:reward).permit(:name, :cost, :img)</code>
         </li>
@@ -856,8 +856,8 @@
           <code class="ruby">    def set_reward</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="46">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="7" data-linenumber="46">
+          <span class="hits">7</span>
           
           <code class="ruby">      @reward = Reward.find(params[:id])</code>
         </li>
@@ -869,6 +869,12 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="48">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="49">
           
           
           <code class="ruby">end</code>
@@ -3789,7 +3795,7 @@
         <li class="covered" data-hits="1" data-linenumber="31">
           <span class="hits">1</span>
           
-          <code class="ruby">    factory :update_reward do</code>
+          <code class="ruby">    factory :updated_reward do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="32">
