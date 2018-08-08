@@ -18,7 +18,7 @@ class RewardsController < ApplicationController
       flash[:notice] = "New reward has been created!"
       redirect_to rewards_path
     else
-      @errors = []
+      @errors = errors?(@reward)
 
       flash[:alert] = "Please correct the following errors: #{@errors.join(". ")}"
       redirect_to new_reward_path
@@ -32,7 +32,7 @@ class RewardsController < ApplicationController
   def update
     if @reward.update(reward_params)
     else
-
+      @errors = errors?(@reward)
     end
   end
 
