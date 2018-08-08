@@ -87,8 +87,9 @@ RSpec.describe RewardsController, type: :controller do
         it "updates a reward" do
           patch :update, params: {id: reward.to_param,reward: new_attributes}
           reward.reload
-          expect(reward.name).to eq("test2")
-          expect(reward.points).to eq(800)
+          expect(reward.name).to eq("Updated Reward")
+          expect(reward.img).to eq("Updated Image")
+          expect(reward.cost).to eq(800)
         end
 
         it "redirects on update" do
