@@ -27,10 +27,7 @@ class ParticipantsController < ApplicationController
       flash[:notice] = "Created Participant Successfully!"
       redirect_to participants_path
     else
-      @errors = []
-      @participant.errors.full_messages.each do |m|
-        @errors << m
-      end
+      @errors = errors?(@participant)
       flash[:alert] = "Please correct the following errors: #{@errors.join(". ")}"
       redirect_to new_participant_path
     end
@@ -50,10 +47,7 @@ class ParticipantsController < ApplicationController
       flash[:notice] = "Updated Participant Successfully!"
       redirect_to participants_path
     else
-      @errors = []
-      @participant.errors.full_messages.each do |m|
-        @errors << m
-      end
+      @errors = @errors = errors?(@participant)
       flash[:alert] = "Please correct the following errors: #{@errors.join(". ")}"
       redirect_to edit_participant_path(@participant)
     end
