@@ -19,9 +19,7 @@ class RewardsController < ApplicationController
       redirect_to rewards_path
     else
       @errors = []
-      @reward.errors.full_messages.each do |m|
-        @errors << m
-      end
+
       flash[:alert] = "Please correct the following errors: #{@errors.join(". ")}"
       redirect_to new_reward_path
     end
