@@ -143,7 +143,6 @@ RSpec.describe ParticipantsController, type: :controller do
       expect {
         delete :destroy, params: {id: participant.to_param}
       }.to change(Participant, :count).by(-1)
-
     end
   end
 
