@@ -32,7 +32,7 @@ class RewardsController < ApplicationController
   def update
     if @reward.update(reward_params)
       flash[:notice] = "Reward has been updated!"
-      redirect_to
+      redirect_to rewards_path
     else
       @errors = errors?(@reward)
     end
