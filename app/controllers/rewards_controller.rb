@@ -34,7 +34,7 @@ class RewardsController < ApplicationController
   def update
     if @reward.update(reward_params)
     else
-      
+
     end
   end
 
