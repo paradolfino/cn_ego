@@ -45,4 +45,5 @@ class RewardsController < ApplicationController
     def set_reward
       @reward = Reward.find(params[:id])
     end
+
 end
