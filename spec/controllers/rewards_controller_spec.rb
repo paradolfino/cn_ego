@@ -122,20 +122,23 @@ RSpec.describe RewardsController, type: :controller do
     end
 
     describe "#DELETE" do
-      let(:reward) {create(:reward)}
+      let(:reward) {build(:reward)}
 
       it "destroys a reward" do
+        reward.save
         expect {
           delete :destroy, params: {id: reward.to_param }
         }.to change(Reward, :count).by(-1)
       end
 
       it "renders a flash message after delete" do
+        reward.save
         delete :destroy, params: {id: reward.to_param }
         expect(flash[:notice]).to be_present
       end
 
       it "redirects to rewards_path after destroy" do
+        reward.save
         delete :destroy, params: {id: reward.to_param }
         expect(response).to redirect_to(rewards_path)
       end
