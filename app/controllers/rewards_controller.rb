@@ -13,6 +13,8 @@ class RewardsController < ApplicationController
   def create
     @reward = Reward.new(reward_params)
     if @reward.save
+      flash[:notice] = "New reward has been created!"
+      redirect_to rewards_path
     else
       @errors = []
       @reward.errors.full_messages.each do |m|
