@@ -72,12 +72,13 @@ RSpec.describe UsersController, type: :controller do
     let(:user) {create(:user)}
     let(:valid_attributes) { attributes_for(:user)}
     let(:new_attributes) { attributes_for(:updated_user)}
-    let(:invalid_attributes) { attributes_for(:invalid_name)}
+    let(:invalid_attributes) { attributes_for(:invalid_email)}
 
     it "updates a user" do
         patch :update, params: {id: user.to_param,user: new_attributes}
         user.reload
-
+        expect(user.email).to eq("test2@test2.com")
+        expect(user.password).to eq("test2")
     end
 
     it "redirects on update" do
