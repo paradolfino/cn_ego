@@ -11,8 +11,11 @@ RSpec.describe UsersController, type: :controller do
 
     it "updates a user" do
       user = create(:user)
-      patch :update, params: {id: user.to_param, user: new_attributes}
-      expect(user).to receive(:update).with(params).and_return(true)
+      expect {
+        patch :update, params: {id: user.to_param, user: new_attributes}
+      }.to change(user, :email)
+
+
     end
 
     it "redirects on update" do
