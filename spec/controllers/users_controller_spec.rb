@@ -11,6 +11,7 @@ RSpec.describe UsersController, type: :controller do
 
     it "updates a user" do
       params = double(:params, password: 'password', password_confirmation: 'password')
+      patch :update, params
       expect(user).to receive(:update).with(params).and_return(true)
     end
 
