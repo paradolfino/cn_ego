@@ -31,7 +31,7 @@ RSpec.describe UsersController, type: :controller do
 
     let(:user) {create(:user)}
     let(:valid_attributes) { attributes_for(:user)}
-    let(:invalid_attributes) { attributes_for(:invalid_user_name)}
+    let(:invalid_attributes) { attributes_for(:invalid_email)}
 
     it "creates a new user" do
       expect{
