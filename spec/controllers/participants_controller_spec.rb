@@ -70,9 +70,9 @@ RSpec.describe UsersController, type: :controller do
   describe "POST #update" do
 
     let(:user) {create(:user)}
-    let(:valid_attributes) { attributes_for(:user )}
+    let(:valid_attributes) { attributes_for(:user)}
     let(:new_attributes) { attributes_for(:updated_user)}
-    let(:invalid_attributes) { attributes_for(:invalid_both)}
+    let(:invalid_attributes) { attributes_for(:invalid_name)}
 
     it "updates a user" do
         patch :update, params: {id: user.to_param,user: new_attributes}
