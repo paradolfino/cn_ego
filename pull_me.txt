@@ -1,16 +1,1 @@
 
-[write coverage tests for rewards controller, create errors_render concern, add destroy test to participants_controller_spec]
-### 08/08/2018[10:27 - 11:27]:
-* generate rewards controller
-* write tests for rewards controller
-* write passing controller code for rewards
-* write error controller concern
-* write updated_reward factory
-* finish writing passing controller code
-* write test for destroy method
-* test destroy method and write passing controller code
-* fix destroy test to use build instead of create
-* refactor participants controller to use errors? concern
-* add destroy test to participants controller
-
-What's Next? write coverage tests for users controller
