@@ -10,7 +10,7 @@ RSpec.describe UsersController, type: :controller do
     let(:invalid_attributes) { attributes_for(:invalid_email)}
 
     it "updates a user" do
-      params = double(:params, password: 'password', password_confirmation: 'password')
+      params = double(:params, password: 'password')
       patch :update, params
       expect(user).to receive(:update).with(params).and_return(true)
     end
