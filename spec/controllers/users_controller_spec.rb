@@ -12,15 +12,14 @@ RSpec.describe UsersController, type: :controller do
     it "updates a user" do
       user = create(:user)
       expect {
-        patch :update, params: {id: user.to_param, user: new_attributes}
-      }.to change(user, :email)
-
+        user.update(attributes_for(:updated_user))
+      }.to change(user, :password_digest)
 
     end
 
     it "redirects on update" do
       patch :update, params: {id: user.to_param,user: new_attributes}
-      expect(response).to redirect_to(users_path)
+      expect(response).to redirect_to(root_path)
     end
 
     it "renders a flash message on update" do
@@ -41,7 +40,7 @@ RSpec.describe UsersController, type: :controller do
 
     it "redirects to edit template on failure to update user" do
       patch :update, params: {id: user.to_param,user: invalid_attributes}
-      expect(response).to redirect_to(edit_user_path(user))
+      expect(response).to redirect_to(admin_edit_path(user))
     end
 
   end

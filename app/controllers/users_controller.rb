@@ -11,12 +11,9 @@ class UsersController < ApplicationController
       flash[:notice] = "User Successfully Updated"
       redirect_to '/'
     else
-      @errors = []
-      @user.errors.full_messages.each do |m|
-        @errors << m
-      end
+      @errors = errors?(@user)
       flash[:alert] = "Please correct the following errors: #{@errors.join(". ")}"
-      render 'edit'
+      redirect_to admin_edit_path(@user)
     end
     
   end

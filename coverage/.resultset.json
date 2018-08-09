@@ -717,11 +717,11 @@
       "/Users/viktharien/Desktop/dev/cn_ego/app/controllers/concerns/error_render.rb": [
         1,
         1,
-        8,
-        8,
-        24,
+        10,
+        10,
+        26,
         null,
-        8,
+        10,
         null,
         null
       ],
@@ -944,14 +944,13 @@
         null,
         5,
         1,
-        4,
+        3,
         3,
         null,
         1,
         1,
         1,
         1,
-        null,
         null,
         null,
         null,
@@ -1010,14 +1009,11 @@
         null,
         null,
         1,
-        5,
-        3,
-        3,
-        null,
-        2,
+        4,
         2,
         2,
         null,
+        2,
         2,
         2,
         null,
@@ -1027,11 +1023,11 @@
         1,
         null,
         1,
-        7,
+        6,
         null,
         null,
         1,
-        5,
+        4,
         null,
         null
       ],
@@ -1088,6 +1084,6 @@
         null
       ]
     },
-    "timestamp": 1533825438
+    "timestamp": 1533828597
   }
 }
