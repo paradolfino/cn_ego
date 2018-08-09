@@ -98,7 +98,7 @@ RSpec.describe UsersController, type: :controller do
 
     it "fails to update user" do
 
-      expect(build(:invalid_both)).to be_invalid
+      expect(build(:invalid_email)).to be_invalid
 
     end
 
