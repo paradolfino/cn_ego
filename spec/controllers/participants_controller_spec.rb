@@ -40,13 +40,13 @@ RSpec.describe ParticipantsController, type: :controller do
     end
 
     it "redirects on save" do
-        post :create, params: {participant: valid_attributes}
-        expect(response).to redirect_to(participants_path)
+      post :create, params: {participant: valid_attributes}
+      expect(response).to redirect_to(participants_path)
     end
 
     it "renders a flash message on save" do
-        post :create, params: {participant: valid_attributes}
-        expect(flash[:notice]).to be_present
+      post :create, params: {participant: valid_attributes}
+      expect(flash[:notice]).to be_present
     end
 
     it "renders a flash message on failure to save" do
@@ -75,10 +75,10 @@ RSpec.describe ParticipantsController, type: :controller do
     let(:invalid_attributes) { attributes_for(:invalid_both)}
 
     it "updates a participant" do
-        patch :update, params: {id: participant.to_param,participant: new_attributes}
-        participant.reload
-        expect(participant.name).to eq("test2")
-        expect(participant.points).to eq(800)
+      patch :update, params: {id: participant.to_param,participant: new_attributes}
+      participant.reload
+      expect(participant.name).to eq("test2")
+      expect(participant.points).to eq(800)
     end
 
     it "redirects on update" do
@@ -133,16 +133,6 @@ RSpec.describe ParticipantsController, type: :controller do
       part = create(:participant)
       get :edit, params: {id: part.to_param}
       expect(assigns(:participant)).to eq(part)
-    end
-  end
-
-  describe "DELETE #destroy" do
-    let(:participant) {build(:participant)}
-    it "destroys @participant" do
-      participant.save
-      expect {
-        delete :destroy, params: {id: participant.to_param}
-      }.to change(Participant, :count).by(-1)
     end
   end
 
