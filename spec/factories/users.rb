@@ -16,6 +16,7 @@ FactoryBot.define do
     factory :updated_user do
       email "test2@test2.com"
       password "test2"
+      password_confirmation "test2"
     end
   end
 end
