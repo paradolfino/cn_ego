@@ -12,5 +12,10 @@ FactoryBot.define do
        email "test@test.com"
        password nil
     end
+
+    factory :updated_user do
+      email "test2@test2.com"
+      password "test2"
+    end
   end
 end
