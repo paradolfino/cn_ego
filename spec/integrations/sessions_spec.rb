@@ -12,7 +12,7 @@ feature "admin/login" do
     visit login_path
     fill_in "session_email", with: user.email
     fill_in "session_password", with: user.email
-    click_button "Log In"
+    find_button("Log In").click
     puts page.body
     expect(page).to have_current_path "participants/index"
   end
