@@ -8,9 +8,11 @@ feature "admin/login" do
   end
 
   scenario "it logins a user in and redirects to participants path" do
-    create(:user)
+    user = create(:user)
     visit login_path
-    fill_in
+    fill_in "Email", with: user.email
+    fill_in "Password", with: user.email
+    click_button "Log In"
   end
 
 end
