@@ -10,6 +10,7 @@ feature "admin/login" do
   scenario "it logins a user in and redirects to participants path" do
     user = create(:user)
     participant = create(:participant)
+
     visit login_path
     fill_in "session_email", with: user.email
     fill_in "session_password", with: user.email
