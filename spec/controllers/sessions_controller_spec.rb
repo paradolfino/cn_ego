@@ -12,7 +12,8 @@ RSpec.describe SessionsController, type: :controller do
   describe "POST #create session" do
     it "creates a new session" do
       user = create(:user)
-      controller.session[]
+      controller.session[:user_id] = user.id
+      
     end
   end
 
