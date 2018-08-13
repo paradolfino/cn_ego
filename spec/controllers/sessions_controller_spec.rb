@@ -15,7 +15,6 @@ RSpec.describe SessionsController, type: :controller do
       params = {session: {email: user.email, password: user.password}}
     end
     it "creates a new session" do
-      user = create(:user)
       post :create, params: params
       expect(controller.session[:user_id]).to_not be_nil
     end
