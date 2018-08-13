@@ -15,7 +15,7 @@ feature "admin/login" do
     fill_in "session_password", with: user.email
     click_button "Log In"
     field = page.find(:css, "table")
-    expect(page).to have_content(participant.name)
+    expect(page).to have_content("Test")
   end
 
 end
