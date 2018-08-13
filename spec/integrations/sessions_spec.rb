@@ -16,8 +16,6 @@ feature "admin/login" do
       find_button("Log In").click
     }.to redirect_to participants_path
 
-    puts page.body
-    expect(page).to have_current_path "participants/index"
   end
 
 end
