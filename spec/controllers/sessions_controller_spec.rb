@@ -13,7 +13,7 @@ RSpec.describe SessionsController, type: :controller do
     it "creates a new session" do
       user = create(:user)
       post :create, params: {session: {email: user.email, password: user.password}}
-
+      puts user.inspect
     end
   end
 
