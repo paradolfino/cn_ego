@@ -29,13 +29,13 @@ RSpec.describe SessionsController, type: :controller do
     end
 
     it "fails to create new session with invalid credentials" do
-      post :create, params: {session: {email: user.email, password: "not correct"}}
+      post :create, params: invalid_params
       expect(controller.session[:user_id]).to be_nil
     end
 
     it "renders a flash message on failure to create new session" do
-      post :create, params: {session: {email: user.email, password: "not correct"}}
-
+      post :create, params: invalid_params
+      expect(flash[:alert]).to be_present
     end
   end
 
