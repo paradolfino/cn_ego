@@ -14,14 +14,14 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-08-13T17:27:08-04:00">2018-08-13T17:27:08-04:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-08-13T17:29:46-04:00">2018-08-13T17:29:46-04:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="yellow">87.62%</span></span>
+    (<span class="covered_percent"><span class="yellow">87.63%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
@@ -31,10 +31,10 @@
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>33</b> files in total.
-    <b>202</b> relevant lines. 
-    <span class="green"><b>177</b> lines covered</span> and
-    <span class="red"><b>25</b> lines missed </span>
+    <b>32</b> files in total.
+    <b>186</b> relevant lines. 
+    <span class="green"><b>163</b> lines covered</span> and
+    <span class="red"><b>23</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -151,16 +151,6 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#79117e36a01c6f7f651cde8e7d57a6d83e0a97f1" class="src_link" title="app/models/participant.rb">app/models/participant.rb</a></td>
-        <td class="red strong">62.5 %</td>
-        <td>27</td>
-        <td>16</td>
-        <td>10</td>
-        <td>6</td>
-        <td>0.6</td>
-      </tr>
-      
-      <tr>
         <td class="strong"><a href="#59d5a24fb40e6f8de5080d3c1e125cac513e9538" class="src_link" title="app/models/user.rb">app/models/user.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>6</td>
@@ -272,12 +262,12 @@
       
       <tr>
         <td class="strong"><a href="#78cca0f70852c1d4674971b709e565cd89bd477e" class="src_link" title="config/initializers/friendly_id.rb">config/initializers/friendly_id.rb</a></td>
-        <td class="yellow strong">83.33 %</td>
+        <td class="red strong">16.67 %</td>
         <td>88</td>
         <td>6</td>
-        <td>5</td>
         <td>1</td>
-        <td>0.8</td>
+        <td>5</td>
+        <td>0.2</td>
       </tr>
       
       <tr>
@@ -948,187 +938,6 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="3">
-          
-          
-          <code class="ruby">end</code>
-        </li>
-      
-    </ol>
-  </pre>
-</div>
-
-      
-        <div class="source_table" id="79117e36a01c6f7f651cde8e7d57a6d83e0a97f1">
-  <div class="header">
-    <h3>app/models/participant.rb</h3>
-    <h4><span class="red">62.5 %</span> covered</h4>
-    <div>
-      <b>16</b> relevant lines. 
-      <span class="green"><b>10</b> lines covered</span> and
-      <span class="red"><b>6</b> lines missed.</span>
-    </div>
-  </div>
-  
-  <pre>
-    <ol>
-      
-        <li class="covered" data-hits="1" data-linenumber="1">
-          <span class="hits">1</span>
-          
-          <code class="ruby">class Participant &lt; ApplicationRecord</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="2">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    require &#39;csv&#39;</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="3">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    extend FriendlyId</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="4">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    friendly_id :name, use: :slugged</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="5">
-          
-          
-          <code class="ruby">    </code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="6">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    validates :name, presence: true, uniqueness: true, length: { minimum: 3, maximum: 30 }</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="7">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    validates :points, presence: true</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="8">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    validates_numericality_of :points, only_integer: true</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="9">
-          
-          
-          <code class="ruby">    </code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="10">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    def should_generate_new_friendly_id?</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="11">
-          <span class="hits">1</span>
-          
-          <code class="ruby">       slug.blank? || name_changed?</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="12">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="13">
-          
-          
-          <code class="ruby">    </code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="14">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    def self.import(file)</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="15">
-          
-          
-          <code class="ruby">        if file</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="16">
-          
-          
-          <code class="ruby">            CSV.foreach(file.path, headers: true, header_converters: :symbol) do |row|</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="17">
-          
-          
-          <code class="ruby">                new_row = row.to_hash.delete_if { |k, v| k.nil? }</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="18">
-          
-          
-          <code class="ruby">                begin</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="19">
-          
-          
-          <code class="ruby">                    Participant.create(new_row)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="20">
-          
-          
-          <code class="ruby">                rescue StandardError =&gt; e</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="21">
-          
-          
-          <code class="ruby">                    puts e.message</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="22">
-          
-          
-          <code class="ruby">                end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="23">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="24">
-          
-          
-          <code class="ruby">            end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="25">
-          
-          
-          <code class="ruby">        end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="26">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="27">
           
           
           <code class="ruby">end</code>
@@ -2293,11 +2102,11 @@
         <div class="source_table" id="78cca0f70852c1d4674971b709e565cd89bd477e">
   <div class="header">
     <h3>config/initializers/friendly_id.rb</h3>
-    <h4><span class="yellow">83.33 %</span> covered</h4>
+    <h4><span class="red">16.67 %</span> covered</h4>
     <div>
       <b>6</b> relevant lines. 
-      <span class="green"><b>5</b> lines covered</span> and
-      <span class="red"><b>1</b> lines missed.</span>
+      <span class="green"><b>1</b> lines covered</span> and
+      <span class="red"><b>5</b> lines missed.</span>
     </div>
   </div>
   
@@ -2400,8 +2209,8 @@
           <code class="ruby">  # undesirable to allow as slugs. Edit this list as needed for your app.</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="17">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="17">
+          
           
           <code class="ruby">  config.use :reserved</code>
         </li>
@@ -2412,8 +2221,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="19">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="19">
+          
           
           <code class="ruby">  config.reserved_words = %w(new edit index session login logout users admin</code>
         </li>
@@ -2730,14 +2539,14 @@
           <code class="ruby">  #</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="72">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="72">
+          
           
           <code class="ruby">  config.use Module.new {</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="73">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="73">
+          
           
           <code class="ruby">     def should_generate_new_friendly_id?</code>
         </li>
