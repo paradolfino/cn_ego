@@ -10,7 +10,9 @@ RSpec.describe SessionsController, type: :controller do
   end
 
   describe "POST #create session" do
-
+    it "creates a new session" do
+      
+    end
   end
 
   describe "DELETE #destroy session" do
