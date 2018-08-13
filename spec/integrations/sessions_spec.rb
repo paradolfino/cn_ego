@@ -5,7 +5,7 @@ feature "admin/login" do
     visit login_path
     puts page.body
     sleep(3)
-    expect(page).to have_content("Admin Login")
+    expect(page).to have_xpath("//form")
   end
 
 end
