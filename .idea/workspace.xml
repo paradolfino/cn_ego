@@ -102,8 +102,8 @@
       <file leaf-file-name="sessions_controller_spec.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/controllers/sessions_controller_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="32" column="80" selection-start-line="32" selection-start-column="80" selection-end-line="32" selection-end-column="80" />
+            <state relative-caret-position="327">
+              <caret line="33" column="48" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -527,7 +527,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90791000" />
+    <option name="totallyTimeSpent" value="90813000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="0" />
@@ -896,8 +896,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/controllers/sessions_controller_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="32" column="80" selection-start-line="32" selection-start-column="80" selection-end-line="32" selection-end-column="80" />
+        <state relative-caret-position="327">
+          <caret line="33" column="48" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
         </state>
       </provider>
     </entry>
