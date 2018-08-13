@@ -21,6 +21,12 @@ RSpec.describe SessionsController, type: :controller do
       post :create, params: {session: {email: user.email, password: user.password}}
       expect(flash[:notice]).to be_present
     end
+
+    it "redirects to root on new session" do
+      user = create(:user)
+      post :create, params: {session: {email: user.email, password: user.password}}
+      expect(response).to redirect_to(root_path)
+    end
   end
 
   describe "DELETE #destroy session" do
