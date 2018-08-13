@@ -15,6 +15,7 @@ feature "admin/login" do
     find_button("Log In").click
     puts page.body
     expect(page).to have_current_path "participants/index"
+    # will need to do further research
   end
 
 end
