@@ -40,7 +40,7 @@ RSpec.describe SessionsController, type: :controller do
 
     it "renders new template on failure to create new session" do
       post, :create, params: invalid_params
-      expect(response).to render(:new)
+      expect(response).to render_template :new
     end
   end
 
