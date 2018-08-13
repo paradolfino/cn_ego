@@ -9,11 +9,12 @@ feature "admin/login" do
 
   scenario "it logins a user in and redirects to participants path" do
     user = create(:user)
+    create(:participant)
     visit login_path
     fill_in "session_email", with: user.email
     fill_in "session_password", with: user.email
     click_button "Log In"
-    expect(current_path).to eq(participants_path)
+    expect(page).to have_content(participants_path)
   end
 
 end
