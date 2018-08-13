@@ -551,7 +551,7 @@
         null,
         null,
         1,
-        1,
+        2,
         null,
         null,
         1,
@@ -559,11 +559,11 @@
         null,
         null,
         1,
-        1,
+        2,
         null,
         null,
         1,
-        1,
+        2,
         null,
         null,
         null
@@ -639,8 +639,21 @@
         0,
         null,
         null
+      ],
+      "/Users/viktharien/Desktop/dev/cn_ego/app/models/user.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/Users/viktharien/Desktop/dev/cn_ego/app/models/application_record.rb": [
+        1,
+        1,
+        null
       ]
     },
-    "timestamp": 1534194858
+    "timestamp": 1534195158
   }
 }
