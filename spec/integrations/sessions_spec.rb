@@ -13,6 +13,7 @@ feature "admin/login" do
     fill_in "Email", with: user.email
     fill_in "Password", with: user.email
     click_button "Log In"
+    expect(current_path).to eq(participants_path)
   end
 
 end
