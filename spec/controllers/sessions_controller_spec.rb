@@ -1,6 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe SessionsController, type: :controller do
+  let(:user) {create(:user)}
+  let(:params) {params = {session: {email: user.email, password: user.password}}}
+  let(:invalid_params) {params = {session: {email: user.email, password: "not correct"}}}
   describe "GET #new session" do
     it "returns a 200 http status of success" do
       get :new
@@ -10,9 +13,7 @@ RSpec.describe SessionsController, type: :controller do
   end
 
   describe "POST #create session" do
-    let(:user) {create(:user)}
-    let(:params) {params = {session: {email: user.email, password: user.password}}}
-    let(:invalid_params) {params = {session: {email: user.email, password: "not correct"}}}
+
     it "creates a new session" do
       post :create, params: params
       expect(controller.session[:user_id]).to_not be_nil
