@@ -14,7 +14,7 @@ feature "admin/login" do
     fill_in "session_password", with: user.email
     click_button "Log In"
     puts page.body
-    expect(page).to have_current_page
+    expect(page).to have_current_path "participants/index"
   end
 
 end
