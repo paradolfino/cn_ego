@@ -57,5 +57,11 @@ RSpec.describe SessionsController, type: :controller do
       delete :destroy
       expect(flash[:notice]).to be_present
     end
+
+    it "redirects to root on destroy" do
+      post :create, params: params
+      delete :destroy
+      expect(response).to redirect_to(root_path)
+    end
   end
 end
