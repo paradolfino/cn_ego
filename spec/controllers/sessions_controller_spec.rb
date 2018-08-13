@@ -20,14 +20,12 @@ RSpec.describe SessionsController, type: :controller do
     end
 
     it "renders a flash message on new session" do
-      user = create(:user)
-      post :create, params: {session: {email: user.email, password: user.password}}
+      post :create, params: params
       expect(flash[:notice]).to be_present
     end
 
     it "redirects to participants_path on new session" do
-      user = create(:user)
-      post :create, params: {session: {email: user.email, password: user.password}}
+      post :create, params: params
       expect(response).to redirect_to(participants_path)
     end
 
