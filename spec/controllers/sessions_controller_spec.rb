@@ -30,7 +30,6 @@ RSpec.describe SessionsController, type: :controller do
     end
 
     it "fails to create new session with invalid credentials" do
-      user = create(:user)
       post :create, params: {session: {email: user.email, password: "not correct"}}
       expect(controller.session[:user_id]).to be_nil
     end
