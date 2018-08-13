@@ -1,8 +1,8 @@
 
-[write coverage tests for users controller]
-### 09/08/2018[10:16 - 10:38]:
-* write coverage tests for users controller
-* fix factories for user
-* fix users controller tests to work with changes to users factory
+[write coverage tests for sessions_controller]
+### 13/08/2018[15:09 - 17:01]:
+* write new test for sessions controller spec
+* write tests for create
+* write tests for delete
 
-What's Next? write coverage tests for sessions controller
+What's Next? write integration tests for sessions_controller
