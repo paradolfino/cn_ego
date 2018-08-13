@@ -45,6 +45,10 @@ RSpec.describe SessionsController, type: :controller do
   end
 
   describe "DELETE #destroy session" do
-
+    it "sets session user_id to nil" do
+      post :create, params: params
+      delete :destroy
+      expect(controller.session[:user_id]).to be_nil
+    end
   end
 end
