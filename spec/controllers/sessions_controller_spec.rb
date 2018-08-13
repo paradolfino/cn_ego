@@ -25,7 +25,7 @@ RSpec.describe SessionsController, type: :controller do
     it "redirects to root on new session" do
       user = create(:user)
       post :create, params: {session: {email: user.email, password: user.password}}
-      expect(response).to redirect_to(root_path)
+      expect(response).to redirect_to(participants_path)
     end
   end
 
