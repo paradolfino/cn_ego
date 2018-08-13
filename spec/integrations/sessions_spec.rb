@@ -14,8 +14,7 @@ feature "admin/login" do
     fill_in "session_email", with: user.email
     fill_in "session_password", with: user.email
     click_button "Log In"
-    field = page.find(:xpath, "//table")
-    expect(page).to have_content("Test")
+    expect(page).to be_participants_page
   end
 
 end
