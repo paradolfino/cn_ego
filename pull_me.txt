@@ -1,8 +1,1 @@
 
-[write coverage tests for sessions_controller]
-### 13/08/2018[15:09 - 17:01]:
-* write new test for sessions controller spec
-* write tests for create
-* write tests for delete
-
-What's Next? write integration tests for sessions_controller
