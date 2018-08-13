@@ -22,10 +22,15 @@ RSpec.describe SessionsController, type: :controller do
       expect(flash[:notice]).to be_present
     end
 
-    it "redirects to root on new session" do
+    it "redirects to participants_path on new session" do
       user = create(:user)
       post :create, params: {session: {email: user.email, password: user.password}}
       expect(response).to redirect_to(participants_path)
+    end
+
+    it "fails to create new session with invalid credentials" do
+      user = create(:user)
+      post :create, params: {session: {email: user.email, password: "not correct"}
     end
   end
 
