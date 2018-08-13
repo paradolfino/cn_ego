@@ -51,5 +51,11 @@ RSpec.describe SessionsController, type: :controller do
       delete :destroy
       expect(controller.session[:user_id]).to be_nil
     end
+
+    it "renders flash message on destroy" do
+      post :create, params: params
+      delete :destroy
+      expect(flash[:notice]).to be_present
+    end
   end
 end
