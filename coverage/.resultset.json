@@ -551,7 +551,7 @@
         null,
         null,
         1,
-        62,
+        63,
         null,
         null,
         1,
@@ -559,11 +559,11 @@
         null,
         null,
         1,
-        62,
+        63,
         null,
         null,
         1,
-        62,
+        63,
         null,
         null,
         null
@@ -939,8 +939,8 @@
         1,
         null,
         1,
-        9,
-        6,
+        10,
+        7,
         4,
         1,
         1,
@@ -996,6 +996,12 @@
         1,
         null,
         null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
         null
       ],
       "/Users/viktharien/Desktop/dev/cn_ego/app/controllers/sessions_controller.rb": [
@@ -1006,11 +1012,11 @@
         null,
         null,
         1,
-        8,
-        8,
-        5,
-        5,
-        5,
+        9,
+        9,
+        6,
+        6,
+        6,
         null,
         3,
         3,
@@ -1018,9 +1024,9 @@
         null,
         null,
         1,
-        2,
-        2,
-        2,
+        3,
+        3,
+        3,
         null,
         null
       ],
@@ -1173,6 +1179,6 @@
         null
       ]
     },
-    "timestamp": 1534193953
+    "timestamp": 1534194021
   }
 }
