@@ -551,7 +551,7 @@
         null,
         null,
         1,
-        53,
+        55,
         null,
         null,
         1,
@@ -559,11 +559,11 @@
         null,
         null,
         1,
-        53,
+        55,
         null,
         null,
         1,
-        53,
+        55,
         null,
         null,
         null
@@ -935,6 +935,57 @@
         null,
         null
       ],
+      "/Users/viktharien/Desktop/dev/cn_ego/spec/controllers/sessions_controller_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/viktharien/Desktop/dev/cn_ego/app/controllers/sessions_controller.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null
+      ],
       "/Users/viktharien/Desktop/dev/cn_ego/spec/controllers/users_controller_spec.rb": [
         1,
         null,
@@ -1084,6 +1135,6 @@
         null
       ]
     },
-    "timestamp": 1533828597
+    "timestamp": 1534192282
   }
 }
