@@ -11,9 +11,8 @@ RSpec.describe SessionsController, type: :controller do
 
   describe "POST #create session" do
     let(:user) {create(:user)}
-    let(:params) do
-      params = {session: {email: user.email, password: user.password}}
-    end
+    let(:params) {params = {session: {email: user.email, password: user.password}}}
+    let(:invalid_params) {params = {session: {email: user.email, password: "not correct"}}}
     it "creates a new session" do
       post :create, params: params
       expect(controller.session[:user_id]).to_not be_nil
@@ -32,6 +31,11 @@ RSpec.describe SessionsController, type: :controller do
     it "fails to create new session with invalid credentials" do
       post :create, params: {session: {email: user.email, password: "not correct"}}
       expect(controller.session[:user_id]).to be_nil
+    end
+
+    it "renders a flash message on failure to create new session" do
+      post :create, params: {session: {email: user.email, password: "not correct"}}
+
     end
   end
 
