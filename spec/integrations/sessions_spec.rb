@@ -10,12 +10,11 @@ feature "admin/login" do
     user = create(:user)
 
     visit login_path
-    expect {
-      fill_in "session_email", with: user.email
-      fill_in "session_password", with: user.email
-      find_button("Log In").click
-    }.to redirect_to participants_path
-
+    fill_in "session_email", with: user.email
+    fill_in "session_password", with: user.email
+    find_button("Log In").click
+    puts page.body
+    expect(page).to have_current_path "participants/index"
   end
 
 end
