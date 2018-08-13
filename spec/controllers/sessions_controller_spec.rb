@@ -37,6 +37,11 @@ RSpec.describe SessionsController, type: :controller do
       post :create, params: invalid_params
       expect(flash[:alert]).to be_present
     end
+
+    it "renders new template on failure to create new session" do
+      post, :create, params: invalid_params
+      expect(response).to render(:new)
+    end
   end
 
   describe "DELETE #destroy session" do
