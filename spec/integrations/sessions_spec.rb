@@ -14,7 +14,7 @@ feature "admin/login" do
     fill_in "session_email", with: user.email
     fill_in "session_password", with: user.email
     click_button "Log In"
-    expect(page).to have_content(participants_path)
+    expect(page).to have_content("Test")
   end
 
 end
