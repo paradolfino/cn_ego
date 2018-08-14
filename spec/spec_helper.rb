@@ -96,3 +96,4 @@ RSpec.configure do |config|
 
   config.failure_color = :magenta
 end
+

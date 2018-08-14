@@ -47,7 +47,7 @@ class ParticipantsController < ApplicationController
       flash[:notice] = "Updated Participant Successfully!"
       redirect_to participants_path
     else
-      @errors = @errors = errors?(@participant)
+      @errors = errors?(@participant)
       flash[:alert] = "Please correct the following errors: #{@errors.join(". ")}"
       redirect_to edit_participant_path(@participant)
     end

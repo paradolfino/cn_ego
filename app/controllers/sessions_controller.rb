@@ -7,11 +7,11 @@ class SessionsController < ApplicationController
   def create
       user = User.find_by(email: params[:session][:email].downcase)
       if user && user.authenticate(params[:session][:password])
-          session[:user_id] = user.id 
+          session[:user_id] = user.id
           flash[:notice] = 'Logged in!'
           redirect_to participants_path
       else
-          flash[:alert] = 'There was something wrong with your credentials.'
+          flash[:alert] = "#{user.inspect}"
           render 'new'
       end
   end
