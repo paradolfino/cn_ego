@@ -15,10 +15,10 @@ feature "participants/index" do
     visit participants_path
     field = page.find_by_id("points-#{participant.id}")[:id]
     btn = page.find_by_id("inc-#{participant.id}")[:id]
-    expect {
-      fill_in field, with: "10"
-      click_button(btn)
-    }.to change(participant, :points)
+    puts "oooga #{btn}"
+    fill_in field, with: "10"
+    click_button btn
+    expect(participant.points).to eq(110)
   end
 end
 

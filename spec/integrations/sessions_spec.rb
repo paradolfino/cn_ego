@@ -7,15 +7,13 @@ feature "admin/login" do
   end
 
   scenario "it logins a user in and redirects to participants path" do
-    user = create(:user)
-
+    user = User.create!(email: "Test@Testy.com", password: "123456")
+    user.reload
     visit login_path
     fill_in "session_email", with: user.email
-    fill_in "session_password", with: user.email
-    find_button("Log In").click
-    puts page.body
-    expect(page).to have_current_path "participants/index"
-    # will need to do further research
+    fill_in "session_password", with: user.password
+    click_button "Log In"
+    expect(page).to have_current_path(participants_path)
   end
 
 end
