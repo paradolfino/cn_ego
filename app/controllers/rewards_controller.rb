@@ -10,6 +10,11 @@ class RewardsController < ApplicationController
 
   def new
     @reward = Reward.new
+    @keywords = {
+        name: "New",
+        cost: ["Change", "Change"],
+        submit: "Create"
+    }
   end
 
   def create
@@ -26,7 +31,11 @@ class RewardsController < ApplicationController
   end
 
   def edit
-
+    @keywords = {
+        name: "Edit",
+        points: ["Change", "Current"],
+        submit: "Update"
+    }
   end
 
   def update
