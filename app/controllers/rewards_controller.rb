@@ -12,7 +12,7 @@ class RewardsController < ApplicationController
     @reward = Reward.new
     @keywords = {
         name: "New",
-        cost: ["Change", "Change"],
+        cost: ["Set", "Set"],
         submit: "Create"
     }
   end
