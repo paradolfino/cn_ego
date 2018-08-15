@@ -1,0 +1,11 @@
+<%= form_for @reward do |f| %>
+  <p><%= f.text_field :name, placeholder: "#{@keywords[:name]} the Reward's Name", class: "form-field" %></p>
+  <p><%= f.text_field :cost, placeholder: "#{@keywords[:cost][0]} the Reward's #{@keywords[:cost][1]} cost", class: "form-field" %></p>
+  <p><%= f.file_field :img,
+                      multiple: false,
+                      direct_upload: true,
+                      options: { class: "form-btn" } %></p>
+  <p><%= f.submit "#{@keywords[:submit]} Reward", class: "form-btn" %></p>
+
+<% end %>
+
