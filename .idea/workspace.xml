@@ -108,8 +108,8 @@
       <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/rewards/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+            <state relative-caret-position="240">
+              <caret line="16" column="233" selection-start-line="16" selection-start-column="233" selection-end-line="16" selection-end-column="233" />
             </state>
           </provider>
         </entry>
@@ -484,12 +484,12 @@
       <workItem from="1534255165400" duration="36000" />
       <workItem from="1534255205455" duration="4312000" />
       <workItem from="1534295306522" duration="2837000" />
-      <workItem from="1534338283166" duration="4785000" />
+      <workItem from="1534338283166" duration="4820000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107781000" />
+    <option name="totallyTimeSpent" value="107816000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="0" />
@@ -850,8 +850,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/rewards/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        <state relative-caret-position="240">
+          <caret line="16" column="233" selection-start-line="16" selection-start-column="233" selection-end-line="16" selection-end-column="233" />
         </state>
       </provider>
     </entry>
