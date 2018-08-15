@@ -1,6 +1,1 @@
 
-[write statics controller test]
-### 14/08/2018[11:41 - 11:43]:
-* write http response test for StaticsController spec
-
-What's Next? begin building out prize catalog feature
