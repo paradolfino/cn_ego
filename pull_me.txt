@@ -1,1 +1,7 @@
 
+[write integration test for reward show and write passing code]
+### 21/08/2018[11:49 - 11:59]:
+* write integraiton test for rewards show view
+* write passing rewards show view code
+
+What's Next? write integration test for participant show and write passing code
