@@ -35,6 +35,7 @@ feature "rewards/show" do
   scenario "it renders rewards show view" do
     reward = create(:reward)
     visit reward_path(reward)
-    expect(page).to have_content ("Reward One")
+    expect(page).to have_content("Reward One")
+    expect(page).to have_content("2000")
   end
 end
