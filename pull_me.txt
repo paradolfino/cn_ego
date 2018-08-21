@@ -1,8 +1,7 @@
 
-[add rewards new and index views]
-### 15/08/2018[11:05 - 11:38]:
-* create rewards index view
-* create rewards new view
-* set up @keywords in rewards controller
+[write integration test for reward show and write passing code]
+### 21/08/2018[11:49 - 11:59]:
+* write integraiton test for rewards show view
+* write passing rewards show view code
 
-What's Next? add rewards new and edit form partial
+What's Next? write integration test for participant show and write passing code
