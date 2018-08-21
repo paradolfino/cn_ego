@@ -8,10 +8,11 @@
     <% @rewards.each do |reward| %>
       <tr>
         <td>
-          <p><%= reward.img %></p>
-          <p><%= reward.name %> (Costs: <%= reward.cost %></p>
+          <p><%= image_tag(url_for(reward.img)) if reward.img %></p>
+          <p><%= reward.name %> (Costs: <%= reward.cost %>)</p>
           <p><%= link_to "View", reward_path(reward) %> | <%= link_to "Edit", edit_reward_path(reward) %>
             | <%= link_to "Delete", reward_path(reward), method: :delete, data: { confirm: 'Are you sure you wish to delete this reward?' } %> </p>
+        </td>
       </tr>
     <% end %>
     </tbody>
