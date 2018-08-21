@@ -529,7 +529,7 @@
       "/Users/viktharien/Desktop/dev/cn_ego/app/helpers/application_helper.rb": [
         1,
         1,
-        2,
+        3,
         0,
         null,
         null,
@@ -636,6 +636,7 @@
         1,
         1,
         1,
+        1,
         null,
         null
       ],
@@ -645,17 +646,17 @@
         1,
         1,
         1,
-        0,
+        1,
         null,
         null,
         1,
         1,
         1,
         1,
-        0,
-        0,
-        0,
-        0,
+        1,
+        1,
+        1,
+        1,
         null,
         null,
         null
@@ -701,7 +702,7 @@
         1,
         null,
         1,
-        6,
+        7,
         null,
         null,
         1,
@@ -914,6 +915,32 @@
         null,
         null
       ],
+      "/Users/viktharien/Desktop/dev/cn_ego/app/controllers/sessions_controller.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null
+      ],
       "/Users/viktharien/Desktop/dev/cn_ego/app/models/user.rb": [
         1,
         1,
@@ -923,6 +950,6 @@
         null
       ]
     },
-    "timestamp": 1534870294
+    "timestamp": 1534870682
   }
 }
