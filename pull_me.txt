@@ -1,8 +1,1 @@
 
-[add rewards new and index views]
-### 15/08/2018[11:05 - 11:38]:
-* create rewards index view
-* create rewards new view
-* set up @keywords in rewards controller
-
-What's Next? add rewards new and edit form partial
