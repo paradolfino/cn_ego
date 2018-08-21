@@ -25,6 +25,7 @@ feature "rewards/new" do
 
     expect(current_path).to eq(rewards_path)
     expect(page).to have_content('Test Reward')
+
   end
 
 end
